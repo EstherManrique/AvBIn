@@ -20,6 +20,7 @@ footer.footer {
     img {
       width: 5rem;
       height: auto;
+      padding-right: 1rem;
 
       @media screen and (min-width: $tablet-BP) {
         width: 8rem;

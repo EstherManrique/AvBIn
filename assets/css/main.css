@@ -508,7 +508,8 @@ footer.footer {
       padding: 2rem; } }
   footer.footer .footer-logo img {
     width: 5rem;
-    height: auto; }
+    height: auto;
+    padding-right: 1rem; }
     @media screen and (min-width: 768px) {
       footer.footer .footer-logo img {
         width: 8rem; } }
