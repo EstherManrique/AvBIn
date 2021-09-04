@@ -1,0 +1,60 @@
+footer.footer {
+  background-color: $wine;
+  height: 4rem;
+  color: $white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (min-width: $tablet-BP) {
+    height: 7rem;
+    padding: 1.5rem;
+  }
+
+  @media screen and (min-width: $desktop-BP) {
+    padding: 2rem;
+  }
+
+  .footer-logo {
+    img {
+      width: 5rem;
+      height: auto;
+
+      @media screen and (min-width: $tablet-BP) {
+        width: 8rem;
+      }
+
+      @media screen and (min-width: $desktop-BP) {
+        width: 10rem;
+      }
+    }
+  }
+
+  .footer-contact {
+    h5 {
+      font-size: 0.8rem;
+      margin: 0.3rem auto;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 1.5rem;
+        margin: 0.6rem auto;
+      }
+    }
+
+    p.is-small {
+      font-size: 0.7rem;
+      margin: 0 auto;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-BP) {
+}
+
+@media screen and (min-width: $desktop-BP) {
+}

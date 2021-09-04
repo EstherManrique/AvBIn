@@ -491,4 +491,42 @@ section.services {
       section.services .list-services li.service-11 {
         background-image: url("../../assets/icons/valor 1.svg"); }
 
+footer.footer {
+  background-color: #7d4039;
+  height: 4rem;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    footer.footer {
+      height: 7rem;
+      padding: 1.5rem; } }
+  @media screen and (min-width: 1024px) {
+    footer.footer {
+      padding: 2rem; } }
+  footer.footer .footer-logo img {
+    width: 5rem;
+    height: auto; }
+    @media screen and (min-width: 768px) {
+      footer.footer .footer-logo img {
+        width: 8rem; } }
+    @media screen and (min-width: 1024px) {
+      footer.footer .footer-logo img {
+        width: 10rem; } }
+  footer.footer .footer-contact h5 {
+    font-size: 0.8rem;
+    margin: 0.3rem auto; }
+    @media screen and (min-width: 768px) {
+      footer.footer .footer-contact h5 {
+        font-size: 1.5rem;
+        margin: 0.6rem auto; } }
+  footer.footer .footer-contact p.is-small {
+    font-size: 0.7rem;
+    margin: 0 auto; }
+    @media screen and (min-width: 768px) {
+      footer.footer .footer-contact p.is-small {
+        font-size: 1rem; } }
+
 /*# sourceMappingURL=main.css.map */
