@@ -5,7 +5,6 @@ section.services {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding: 0.5rem 0 1.5rem;
 
   @media screen and (min-width: $tablet-BP) {
@@ -39,7 +38,7 @@ section.services {
   .list-services {
     text-align: left;
     list-style: none;
-    padding-left: 0;
+    padding-left: .5rem;
     cursor: pointer;
     margin: 0;
 
@@ -64,7 +63,7 @@ section.services {
       a {
         text-decoration: none;
         color: $dark;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 2.5;
         font-weight: bold;
 
