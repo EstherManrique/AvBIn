@@ -1,6 +1,6 @@
 section.hero-slogan {
   .hero-slogan-bg {
-    background: url("../../assets/images/header_1.png") no-repeat;
+    background: url('../../assets/images/header_1.png') no-repeat;
     padding: 2.1rem 0;
     background-size: cover;
     
@@ -21,7 +21,7 @@ section.hero-slogan {
   
     @media screen and (min-width: $desktop-BP) {
       h3 {
-        font-size: 4.5rem;
+        font-size: 6rem;
         font-weight: 400;
       }
     }

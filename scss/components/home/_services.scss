@@ -1,0 +1,92 @@
+section.services {
+  background: url("../../assets/images/bg_main-mobile_1.jpg") no-repeat 0 0;
+  background-size: cover;
+  padding: 0.5rem 1.7rem 1.5rem;
+
+  @media screen and (min-width: $tablet-BP) {
+    background-image: url("../../assets/images/bg_main-tablet.jpg");
+  }
+
+  @media screen and (min-width: $desktop-BP) {
+    background-image: url("../../assets/images/bg_main-desktop.jpg");
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  hr {
+    width: 8rem;
+    height: 0.2rem;
+    background-color: $wine;
+  }
+
+  .list-services {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+    cursor: pointer;
+    margin: 0;
+
+    li {
+      background-size: 1.8rem;
+      background-position: left center;
+      background-repeat: no-repeat;
+      padding-left: 3rem;
+
+      a {
+        text-decoration: none;
+        color: $dark;
+        font-size: 1.7rem;
+        line-height: 2.5;
+        font-weight: bold;
+      }
+
+      &.service-1 {
+        background-image: url("../../assets/icons/010-edificios.svg");
+      }
+
+      &.service-2 {
+        background-image: url("../../assets/icons/004-estadisticas.svg");
+      }
+
+      &.service-3 {
+        background-image: url("../../assets/icons/007-analisis-de-mercado.svg");
+      }
+
+      &.service-4 {
+        background-image: url("../../assets/icons/009-estado-financiero.svg");
+      }
+
+      &.service-5 {
+        background-image: url("../../assets/icons/activos\ 1.svg");
+      }
+
+      &.service-6 {
+        background-image: url("../../assets/icons/edificio-de-oficinas\ 1.svg");
+      }
+
+      &.service-7 {
+        background-image: url("../../assets/icons/003-ruedas-dentadas.svg");
+      }
+
+      &.service-8 {
+        background-image: url("../../assets/icons/006-cadena-de-valor\ 1.svg");
+      }
+
+      &.service-9 {
+        background-image: url("../../assets/icons/005-buscar.svg");
+      }
+
+      &.service-10 {
+        background-image: url("../../assets/icons/012-casas\ 1.svg");
+      }
+
+      &.service-11 {
+        background-image: url("../../assets/icons/valor\ 1.svg");
+      }
+    }
+  }
+}

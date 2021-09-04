@@ -17,6 +17,7 @@
 
 @import 'base/typography';
 
-@import 'layout/navigation';
-
-@import 'components/hero-slogan';
+@import 'components/common/hero-slogan';
+@import 'components/common/header-nav';
+@import 'components/common/main-title';
+@import 'components/home/services';

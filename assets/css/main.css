@@ -359,9 +359,6 @@ p {
   p.is-small {
     font-size: 1.2rem; }
 
-.none {
-  display: none; }
-
 section.hero-slogan .hero-slogan-bg {
   background: url("../../assets/images/header_1.png") no-repeat;
   padding: 2.1rem 0;
@@ -377,7 +374,95 @@ section.hero-slogan .hero-slogan-bg {
       font-weight: 400; } }
   @media screen and (min-width: 1024px) {
     section.hero-slogan .hero-slogan-bg h3 {
-      font-size: 4.5rem;
+      font-size: 6rem;
       font-weight: 400; } }
+
+header.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1.5rem 2rem; }
+  header.header .container .logo img {
+    width: 5rem;
+    height: auto; }
+    @media screen and (min-width: 768px) {
+      header.header .container .logo img {
+        width: 7rem; } }
+  header.header .container .none {
+    display: none; }
+  header.header .container .menu-btn {
+    width: auto;
+    height: auto;
+    border: none;
+    background: none; }
+  header.header .container .menu {
+    display: none; }
+
+section.main-title h1 {
+  color: #000000;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 768px) {
+    section.main-title h1 {
+      font-size: 3.5; } }
+
+section.services {
+  background: url("../../assets/images/bg_main-mobile_1.jpg") no-repeat 0 0;
+  background-size: cover;
+  padding: 0.5rem 1.7rem 1.5rem; }
+  @media screen and (min-width: 768px) {
+    section.services {
+      background-image: url("../../assets/images/bg_main-tablet.jpg"); } }
+  @media screen and (min-width: 1024px) {
+    section.services {
+      background-image: url("../../assets/images/bg_main-desktop.jpg"); } }
+  section.services h2 {
+    font-size: 2.4rem;
+    margin: 0;
+    text-align: center; }
+  section.services hr {
+    width: 8rem;
+    height: 0.2rem;
+    background-color: #7d4039; }
+  section.services .list-services {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+    cursor: pointer;
+    margin: 0; }
+    section.services .list-services li {
+      background-size: 1.8rem;
+      background-position: left center;
+      background-repeat: no-repeat;
+      padding-left: 3rem; }
+      section.services .list-services li a {
+        text-decoration: none;
+        color: #333333;
+        font-size: 1.7rem;
+        line-height: 2.5;
+        font-weight: bold; }
+      section.services .list-services li.service-1 {
+        background-image: url("../../assets/icons/010-edificios.svg"); }
+      section.services .list-services li.service-2 {
+        background-image: url("../../assets/icons/004-estadisticas.svg"); }
+      section.services .list-services li.service-3 {
+        background-image: url("../../assets/icons/007-analisis-de-mercado.svg"); }
+      section.services .list-services li.service-4 {
+        background-image: url("../../assets/icons/009-estado-financiero.svg"); }
+      section.services .list-services li.service-5 {
+        background-image: url("../../assets/icons/activos 1.svg"); }
+      section.services .list-services li.service-6 {
+        background-image: url("../../assets/icons/edificio-de-oficinas 1.svg"); }
+      section.services .list-services li.service-7 {
+        background-image: url("../../assets/icons/003-ruedas-dentadas.svg"); }
+      section.services .list-services li.service-8 {
+        background-image: url("../../assets/icons/006-cadena-de-valor 1.svg"); }
+      section.services .list-services li.service-9 {
+        background-image: url("../../assets/icons/005-buscar.svg"); }
+      section.services .list-services li.service-10 {
+        background-image: url("../../assets/icons/012-casas 1.svg"); }
+      section.services .list-services li.service-11 {
+        background-image: url("../../assets/icons/valor 1.svg"); }
 
 /*# sourceMappingURL=main.css.map */

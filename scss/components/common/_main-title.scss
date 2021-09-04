@@ -1,0 +1,12 @@
+section.main-title {
+  h1 {
+    color: $black;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 3.5;
+    }
+  }
+}

@@ -12,7 +12,7 @@
 
 <body>
   <header class="header">
-    <section class="container" role="region" aria-label="">
+    <section class="container" role="region" aria-label="Header general">
       <div class="logo">
         <a href="index.html">
           <img src="assets/images/Logo_Web_Positivo.svg" alt="Logotipo AvBIME">
@@ -29,11 +29,13 @@
         </svg>
       </button>
       <nav class="menu">
-        <a href="index.html">INICIO</a>
-        <a href="nosotros.html">NOSOTROS</a>
-        <a href="servicios.html">SERVICIOS</a>
-        <a href="certificaciones.html">CERTIFICACIONES</a>
-        <a href="contacto.html">CONTACTO</a>
+        <ul class="menu-nav">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">NOSOTROS</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
+          <li><a href="certificaciones.html">CERTIFICACIONES</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
       </nav>
     </section>
   </header>
@@ -43,28 +45,38 @@
       <h3>"Valoramos y Valuamos tus Bienes"</h3>
     </div>
   </section>
-  <section class="main-title">
-    <h1>Avalúos de Bienes Inmuebles Maquinaria y Equipo</h1>
-  </section>
 
-  <main>
-    <div class="services">
-      <h2>AVALÚOS</h2>
-      <ul>
-        <li><i></i>
-          Inmuebles</li>
-        <li>Negocios en Marcha</li>
-        <li>Evaluación de Proyectos Inmobiliarios</li>
-        <li>Reespresión de Estados Financieros</li>
-        <li>Justipreciación de Rentas</li>
-        <li>Regimen de Propiedad en Condominio</li>
-        <li>Maquinaria y Equipo</li>
-        <li>Estudios de Factibilidad</li>
-        <li>Análisis de Inversión Inmobiliaria</li>
-        <li>Avaluo Maestro</li>
-        <li>Opinión de Valor</li>
-      </ul>
-    </div>
+  <main class="main-content">
+    <section class="services">
+      <section class="main-title" role="region" aria-label="Titulo principal de la página">
+        <h1>Avalúos de Bienes Inmuebles <br> Maquinaria y Equipo</h1>
+      </section>
+
+      <div class="services-content">
+        <h2>AVALÚOS</h2>
+        <hr>
+        <ul class="list-services">
+          <li class="service-1" id="service-1"><a href="services.html/#inmuebles">Inmuebles</a></li>
+          <li class="service-2" id="service-2"><a href="services.htm/#negocios-marcha">Negocios en Marcha</a></li>
+          <li class="service-3" id="service-3"><a href="services.html/#evaluacion-proyectos">Evaluación de Proyectos
+              Inmobiliarios</a></li>
+          <li class="service-4" id="service-4"><a href="services.html/#reespresion">Reespresión de Estados
+              Financieros</a>
+          </li>
+          <li class="service-5" id="service-5"><a href="services.html/#justipreciacion">Justipreciación de Rentas</a>
+          </li>
+          <li class="service-6" id="service-6"><a href="services.html/#regimen-propiedad">Regimen de Propiedad en
+              Condominio</a></li>
+          <li class="service-7" id="service-7"><a href="services.html/#maquinaria-equipo">Maquinaria y Equipo</a></li>
+          <li class="service-8" id="service-8"><a href="services.html/#estudio-fctibilidad">Estudios de Factibilidad</a>
+          </li>
+          <li class="service-9" id="service-9"><a href="services.html/#analisis-inversion">Análisis de Inversión
+              Inmobiliaria</a></li>
+          <li class="service-10" id="service-10"><a href="services.html/#avaluo-maestro">Avaluo Maestro</a></li>
+          <li class="service-11" id="service-11"><a href="services.html/#opinion-valor">Opinión de Valor</a></li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer>

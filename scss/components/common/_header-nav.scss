@@ -1,0 +1,37 @@
+header.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1.5rem 2rem;
+
+    .logo {
+      img {
+        width: 5rem;
+        height: auto;
+
+        @media screen and (min-width: $tablet-BP) {
+          width: 7rem;
+        }
+
+        @media screen and (min-width: $desktop-BP) {
+        }
+      }
+    }
+
+    .none {
+      display: none;
+    }
+
+    .menu-btn {
+      width: auto;
+      height: auto;
+      border: none;
+      background: none;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+}
