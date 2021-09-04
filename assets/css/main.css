@@ -368,14 +368,12 @@ section.hero-slogan .hero-slogan-bg {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400; }
-  @media screen and (min-width: 768px) {
-    section.hero-slogan .hero-slogan-bg h3 {
-      font-size: 3rem;
-      font-weight: 400; } }
-  @media screen and (min-width: 1024px) {
-    section.hero-slogan .hero-slogan-bg h3 {
-      font-size: 6rem;
-      font-weight: 400; } }
+    @media screen and (min-width: 768px) {
+      section.hero-slogan .hero-slogan-bg h3 {
+        font-size: 3rem; } }
+    @media screen and (min-width: 1024px) {
+      section.hero-slogan .hero-slogan-bg h3 {
+        font-size: 4rem; } }
 
 header.header .container {
   display: flex;
@@ -405,12 +403,19 @@ section.main-title h1 {
   margin-bottom: 2rem; }
   @media screen and (min-width: 768px) {
     section.main-title h1 {
-      font-size: 3.5; } }
+      font-size: 3.5rem; } }
+  @media screen and (min-width: 1024px) {
+    section.main-title h1 {
+      font-size: 5rem; } }
 
 section.services {
   background: url("../../assets/images/bg_main-mobile_1.jpg") no-repeat 0 0;
   background-size: cover;
-  padding: 0.5rem 1.7rem 1.5rem; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0 1.5rem; }
   @media screen and (min-width: 768px) {
     section.services {
       background-image: url("../../assets/images/bg_main-tablet.jpg"); } }
@@ -421,6 +426,12 @@ section.services {
     font-size: 2.4rem;
     margin: 0;
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      section.services h2 {
+        font-size: 3.5rem; } }
+    @media screen and (min-width: 1024px) {
+      section.services h2 {
+        font-size: 4rem; } }
   section.services hr {
     width: 8rem;
     height: 0.2rem;
@@ -431,17 +442,32 @@ section.services {
     padding-left: 0;
     cursor: pointer;
     margin: 0; }
+    @media screen and (min-width: 1024px) {
+      section.services .list-services {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem 4rem; } }
     section.services .list-services li {
       background-size: 1.8rem;
       background-position: left center;
       background-repeat: no-repeat;
       padding-left: 3rem; }
+      @media screen and (min-width: 768px) {
+        section.services .list-services li {
+          background-size: 2.5rem;
+          padding-left: 5rem; } }
       section.services .list-services li a {
         text-decoration: none;
         color: #333333;
         font-size: 1.7rem;
         line-height: 2.5;
         font-weight: bold; }
+        @media screen and (min-width: 768px) {
+          section.services .list-services li a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 1024px) {
+          section.services .list-services li a {
+            font-size: 2rem; } }
       section.services .list-services li.service-1 {
         background-image: url("../../assets/icons/010-edificios.svg"); }
       section.services .list-services li.service-2 {

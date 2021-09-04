@@ -1,7 +1,12 @@
 section.services {
   background: url("../../assets/images/bg_main-mobile_1.jpg") no-repeat 0 0;
   background-size: cover;
-  padding: 0.5rem 1.7rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.5rem 0 1.5rem;
 
   @media screen and (min-width: $tablet-BP) {
     background-image: url("../../assets/images/bg_main-tablet.jpg");
@@ -15,6 +20,14 @@ section.services {
     font-size: 2.4rem;
     margin: 0;
     text-align: center;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 3.5rem;
+    }
+
+    @media screen and (min-width: $desktop-BP) {
+      font-size: 4rem;
+    }
   }
 
   hr {
@@ -30,11 +43,23 @@ section.services {
     cursor: pointer;
     margin: 0;
 
+    @media screen and (min-width: $desktop-BP) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem 4rem;
+    }
+
+
     li {
       background-size: 1.8rem;
       background-position: left center;
       background-repeat: no-repeat;
       padding-left: 3rem;
+
+      @media screen and (min-width: $tablet-BP) {
+        background-size: 2.5rem;
+        padding-left: 5rem;
+      }
 
       a {
         text-decoration: none;
@@ -42,6 +67,14 @@ section.services {
         font-size: 1.7rem;
         line-height: 2.5;
         font-weight: bold;
+
+        @media screen and (min-width: $tablet-BP) {
+          font-size: 2.5rem;
+        }
+
+        @media screen and (min-width: $desktop-BP) {
+          font-size: 2rem;
+        }
       }
 
       &.service-1 {

@@ -1,30 +1,22 @@
 section.hero-slogan {
   .hero-slogan-bg {
-    background: url('../../assets/images/header_1.png') no-repeat;
+    background: url("../../assets/images/header_1.png") no-repeat;
     padding: 2.1rem 0;
     background-size: cover;
-    
+
     h3 {
       color: white;
       text-align: center;
       font-size: 1.5rem;
       font-weight: 400;
-    }
-    
-    @media screen and (min-width: $tablet-BP) {
-      h3 {
+
+      @media screen and (min-width: $tablet-BP) {
         font-size: 3rem;
-        font-weight: 400;
       }
-      
-    }
-  
-    @media screen and (min-width: $desktop-BP) {
-      h3 {
-        font-size: 6rem;
-        font-weight: 400;
+
+      @media screen and (min-width: $desktop-BP) {
+        font-size: 4rem;
       }
     }
-    
   }
 }
