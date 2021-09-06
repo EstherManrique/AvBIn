@@ -496,24 +496,26 @@ section.main-title h1 {
     section.main-title h1 {
       font-size: 5rem; } }
 
-section.main-subtitle h2 {
-  font-size: 2.4rem;
-  margin: 0;
-  text-align: center; }
-  @media screen and (min-width: 768px) {
-    section.main-subtitle h2 {
-      font-size: 3.5rem; } }
-  @media screen and (min-width: 1024px) {
-    section.main-subtitle h2 {
-      font-size: 4rem; } }
-section.main-subtitle hr {
-  width: 8rem;
-  height: 0.25rem;
-  background-color: #7d4039; }
-  @media screen and (min-width: 768px) {
-    section.main-subtitle hr {
-      width: 12rem;
-      height: 0.4rem; } }
+section.main-subtitle {
+  padding: 2rem 0; }
+  section.main-subtitle h2 {
+    font-size: 2.4rem;
+    margin: 0;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      section.main-subtitle h2 {
+        font-size: 3.5rem; } }
+    @media screen and (min-width: 1024px) {
+      section.main-subtitle h2 {
+        font-size: 4rem; } }
+  section.main-subtitle hr {
+    width: 8rem;
+    height: 0.25rem;
+    background-color: #7d4039; }
+    @media screen and (min-width: 768px) {
+      section.main-subtitle hr {
+        width: 12rem;
+        height: 0.4rem; } }
 
 section.services {
   background: url("../../assets/images/bg_main-mobile_1.jpg") no-repeat 0 0;
@@ -587,12 +589,17 @@ section.services {
 
 footer.footer {
   background-color: #7d4039;
+  width: 100%;
   height: auto;
   color: #ffffff;
   padding: 0.5rem;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999; }
   @media screen and (min-width: 768px) {
     footer.footer {
       padding: 1rem; } }
@@ -626,5 +633,31 @@ footer.footer {
     @media screen and (min-width: 768px) {
       footer.footer .footer-contact p.is-small {
         font-size: 1rem; } }
+
+main.main-content-we {
+  max-width: 300px;
+  margin: 0 auto 8rem; }
+  main.main-content-we .we .content-we p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto 2rem; }
+  main.main-content-we .we .card {
+    background-color: #f1f1f1;
+    box-shadow: 2px 2px 2px 1px #dadada; }
+    main.main-content-we .we .card .content-card-title {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      main.main-content-we .we .card .content-card-title h3 {
+        font-size: 2.4rem;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+        padding-right: 2rem; }
+    main.main-content-we .we .card p {
+      color: #333333;
+      padding: 0 2rem 2.5rem; }
 
 /*# sourceMappingURL=main.css.map */

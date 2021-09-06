@@ -1,11 +1,16 @@
 footer.footer {
   background-color: $wine;
+  width: 100%;
   height: auto;
   color: $white;
   padding: 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
 
   @media screen and (min-width: $tablet-BP) {
     padding: 1rem;
