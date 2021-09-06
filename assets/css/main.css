@@ -23,13 +23,25 @@
 /*-----------------------------------*\
     UNIVERSAL
 \*-----------------------------------*/
+/* :root {
+  max-width: 1200px;  ******PREGNTAR********
+} */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
 html {
-  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
   html body {
-    font-family: "Nunito", sans-serif; }
+    font-family: "Nunito", sans-serif;
+    padding-top: 7.2rem;
+    overflow-x: hidden; }
+    @media screen and (min-width: 768px) {
+      html body {
+        padding-top: 8rem; } }
+    @media screen and (min-width: 1024px) {
+      html body {
+        padding-top: 10rem; } }
+    html body * {
+      box-sizing: border-box; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -360,9 +372,9 @@ p {
     font-size: 1.2rem; }
 
 section.hero-slogan .hero-slogan-bg {
-  background: url("../../assets/images/header_1.png") no-repeat;
-  padding: 2.1rem 0;
-  background-size: cover; }
+  background: url("../../assets/images/header_1.png") no-repeat center center;
+  background-size: cover;
+  padding: 2.1rem 0; }
   section.hero-slogan .hero-slogan-bg h3 {
     color: white;
     text-align: center;
@@ -379,22 +391,98 @@ header.header .container {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  padding: 1.5rem 2rem; }
+  padding: 1rem 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #ffffff; }
+  @media screen and (min-width: 768px) {
+    header.header .container {
+      padding: 1.25rem 4rem; } }
+  @media screen and (min-width: 1024px) {
+    header.header .container {
+      padding: 1.5rem 10rem; } }
   header.header .container .logo img {
-    width: 5rem;
+    width: 6rem;
     height: auto; }
     @media screen and (min-width: 768px) {
       header.header .container .logo img {
         width: 7rem; } }
-  header.header .container .none {
-    display: none; }
+    @media screen and (min-width: 1024px) {
+      header.header .container .logo img {
+        width: 10rem; } }
   header.header .container .menu-btn {
     width: auto;
     height: auto;
     border: none;
     background: none; }
+    @media screen and (min-width: 1024px) {
+      header.header .container .menu-btn {
+        display: none; } }
+    header.header .container .menu-btn .none {
+      display: none; }
   header.header .container .menu {
-    display: none; }
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.75s ease; }
+    @media screen and (min-width: 1024px) {
+      header.header .container .menu {
+        background-color: #ffffff;
+        position: static;
+        height: auto;
+        opacity: 1;
+        pointer-events: auto; } }
+    header.header .container .menu .menu-nav {
+      list-style: none;
+      padding: 5rem; }
+      @media screen and (min-width: 768px) {
+        header.header .container .menu .menu-nav {
+          padding: 7rem; } }
+      @media screen and (min-width: 1024px) {
+        header.header .container .menu .menu-nav {
+          flex-direction: row;
+          display: flex;
+          justify-content: flex-end;
+          padding: 0;
+          margin: 0;
+          line-height: normal;
+          align-items: center;
+          height: 100%; } }
+      header.header .container .menu .menu-nav li {
+        padding: 3rem 0; }
+        @media screen and (min-width: 768px) {
+          header.header .container .menu .menu-nav li {
+            padding: 5rem; } }
+        @media screen and (min-width: 1024px) {
+          header.header .container .menu .menu-nav li {
+            padding: 0 0 0 2rem; } }
+      header.header .container .menu .menu-nav a {
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #333333; }
+        @media screen and (min-width: 768px) {
+          header.header .container .menu .menu-nav a {
+            font-size: 2.5rem; } }
+        @media screen and (min-width: 1024px) {
+          header.header .container .menu .menu-nav a {
+            font-size: 2rem; } }
+  header.header .container .menu.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 5.8rem; }
+    @media screen and (min-width: 768px) {
+      header.header .container .menu.is-active {
+        margin-top: 7rem; } }
 
 section.main-title h1 {
   color: #000000;
@@ -434,19 +522,24 @@ section.services {
         font-size: 4rem; } }
   section.services hr {
     width: 8rem;
-    height: 0.2rem;
+    height: 0.25rem;
     background-color: #7d4039; }
+    @media screen and (min-width: 768px) {
+      section.services hr {
+        width: 12rem;
+        height: 0.4rem; } }
   section.services .list-services {
     text-align: left;
     list-style: none;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     cursor: pointer;
     margin: 0; }
     @media screen and (min-width: 1024px) {
       section.services .list-services {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem 4rem; } }
+        grid-gap: 1rem 4rem;
+        padding-top: 2.5rem; } }
     section.services .list-services li {
       background-size: 1.8rem;
       background-position: left center;
@@ -493,29 +586,32 @@ section.services {
 
 footer.footer {
   background-color: #7d4039;
-  height: 4rem;
+  height: auto;
   color: #ffffff;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center; }
   @media screen and (min-width: 768px) {
     footer.footer {
-      height: 7rem;
-      padding: 1.5rem; } }
+      padding: 1rem; } }
   @media screen and (min-width: 1024px) {
     footer.footer {
-      padding: 2rem; } }
+      padding: 1rem 10rem;
+      justify-content: flex-start; } }
   footer.footer .footer-logo img {
     width: 5rem;
     height: auto;
-    padding-right: 1rem; }
+    cursor: pointer; }
     @media screen and (min-width: 768px) {
       footer.footer .footer-logo img {
         width: 8rem; } }
     @media screen and (min-width: 1024px) {
       footer.footer .footer-logo img {
-        width: 10rem; } }
+        max-width: 10rem; } }
+  @media screen and (min-width: 1024px) {
+    footer.footer .footer-contact {
+      padding-left: 5rem; } }
   footer.footer .footer-contact h5 {
     font-size: 0.8rem;
     margin: 0.3rem auto; }

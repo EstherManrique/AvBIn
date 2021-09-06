@@ -3,15 +3,30 @@
     UNIVERSAL
 \*-----------------------------------*/
 
+/* :root {
+  max-width: 1200px;  ******PREGNTAR********
+} */
+
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    
-    body {
-        font-family: $ff-nunito;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+
+  body {
+    font-family: $ff-nunito;
+    padding-top: 7.2rem;
+    overflow-x: hidden;
+
+    @media screen and (min-width: $tablet-BP) {
+      padding-top: 8rem;
     }
-    
+
+    @media screen and (min-width: $desktop-BP) {
+        padding-top: 10rem;
+      }
+
+    * {
+        box-sizing: border-box;
+    }
+  }
 }
-
-
