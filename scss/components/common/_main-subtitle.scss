@@ -1,0 +1,26 @@
+section.main-subtitle {
+  h2 {
+    font-size: 2.4rem;
+    margin: 0;
+    text-align: center;
+
+    @media screen and (min-width: $tablet-BP) {
+      font-size: 3.5rem;
+    }
+
+    @media screen and (min-width: $desktop-BP) {
+      font-size: 4rem;
+    }
+  }
+
+  hr {
+    width: 8rem;
+    height: 0.25rem;
+    background-color: $wine;
+
+    @media screen and (min-width: $tablet-BP) {
+      width: 12rem;
+      height: 0.4rem;
+    }
+  }
+}
