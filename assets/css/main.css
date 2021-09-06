@@ -644,7 +644,7 @@ main.main-content-we {
     margin: 0 auto 2rem; }
   main.main-content-we .we .card {
     background-color: #f1f1f1;
-    box-shadow: 2px 2px 2px 1px #dadada; }
+    box-shadow: 0 1px 4px 2px #dadada; }
     main.main-content-we .we .card .content-card-title {
       padding: 1rem;
       display: flex;
