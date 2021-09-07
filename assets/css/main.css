@@ -420,7 +420,7 @@ header.header {
   top: 0;
   z-index: 999;
   width: 100%;
-  background-color: #ffffff; }
+  background-color: #f2f2f2; }
   @media screen and (min-width: 768px) {
     header.header {
       padding: 1.25rem 4rem; } }
@@ -457,7 +457,7 @@ header.header {
     transition: opacity 0.75s ease; }
     @media screen and (min-width: 1024px) {
       header.header .menu {
-        background-color: #ffffff;
+        background-color: #f2f2f2;
         position: static;
         height: auto;
         opacity: 1;
@@ -654,41 +654,54 @@ section.services {
       section.services .list-services li.service-11 {
         background-image: url("../../assets/icons/valor 1.svg"); }
 
-@media screen and (min-width: 768px) {
-  .cards-we {
-    max-width: 550px;
-    margin: 0 auto; } }
-.cards-we .card {
-  background-color: #f1f1f1;
-  box-shadow: 0 1px 4px 2px #dadada; }
-  @media screen and (min-width: 768px) {
-    .cards-we .card {
-      margin: 3rem; } }
-  .cards-we .card .content-card-title {
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .cards-we .card .content-card-title h3 {
-      font-size: 2.4rem;
-      text-align: center;
-      color: #000000;
-      margin: 0;
-      padding-right: 2rem; }
-      @media screen and (min-width: 768px) {
-        .cards-we .card .content-card-title h3 {
-          font-size: 3rem; } }
-  @media screen and (min-width: 768px) {
-    .cards-we .card .card-icon svg {
-      width: 5rem;
-      height: auto; } }
-  .cards-we .card p {
-    color: #333333;
-    padding: 0 2rem 2.5rem;
-    text-align: center; }
+.cards-we {
+ /* @media screen and (min-width: $tablet-BP) {
+   max-width: 550px;
+   margin: 0 auto;
+ }
+*/ }
+  @media screen and (min-width: 1024px) {
+    .cards-we .container .cards-wrapper {
+      display: flex;
+      flex-direction: row; } }
+  .cards-we .card {
+    background-color: #f1f1f1;
+    box-shadow: 0 1px 4px 2px #dadada; }
     @media screen and (min-width: 768px) {
-      .cards-we .card p {
-        font-size: 2rem; } }
+      .cards-we .card {
+        margin: 3rem 10rem; } }
+    @media screen and (min-width: 1024px) {
+      .cards-we .card {
+        margin: 1rem; } }
+    .cards-we .card .content-card-title {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .cards-we .card .content-card-title h3 {
+        font-size: 2.4rem;
+        text-align: center;
+        color: #000000;
+        margin: 0;
+        padding-right: 2rem; }
+        @media screen and (min-width: 768px) {
+          .cards-we .card .content-card-title h3 {
+            font-size: 3rem; } }
+    @media screen and (min-width: 768px) {
+      .cards-we .card .card-icon svg {
+        width: 5rem;
+        height: auto; } }
+    .cards-we .card p {
+      color: #333333;
+      padding: 0 2rem 2.5rem;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .cards-we .card p {
+          font-size: 2rem; } }
+      @media screen and (min-width: 1024px) {
+        .cards-we .card p {
+          font-size: 1.8rem;
+          padding: 0 2rem; } }
 
 @media screen and (min-width: 768px) {
   .content-we {
