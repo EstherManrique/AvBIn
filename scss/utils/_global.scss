@@ -31,14 +31,20 @@ body {
 }
 
 .main-content {
-  min-height: calc(100vh - 12.4rem);
+  /* min-height: calc(100vh - 12.4rem); */
+  min-height: auto;
+
+/*   @media screen and (min-width: $tablet-BP) {
+    min-height: calc(100vh - 17.1rem);
+  } */
+
 }
 
 .container {
   padding: 0 2rem;
 
   @media screen and (min-width: $tablet-BP) {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
   }
 

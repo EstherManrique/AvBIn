@@ -45,13 +45,17 @@ body {
     box-sizing: border-box; }
 
 .main-content {
-  min-height: calc(100vh - 12.4rem); }
+  /* min-height: calc(100vh - 12.4rem); */
+  min-height: auto;
+  /*   @media screen and (min-width: $tablet-BP) {
+      min-height: calc(100vh - 17.1rem);
+    } */ }
 
 .container {
   padding: 0 2rem; }
   @media screen and (min-width: 768px) {
     .container {
-      max-width: 600px;
+      max-width: 800px;
       margin: 0 auto; } }
   @media screen and (min-width: 1024px) {
     .container {
@@ -592,11 +596,12 @@ section.services {
       section.services .main-title h1 {
         font-size: 5rem; } }
   section.services .main-subtitle {
-    padding: 0; }
+    padding: 0 0 1rem; }
   section.services .list-services {
     text-align: left;
     list-style: none;
     padding-left: 0.5rem;
+    padding-bottom: 1rem;
     cursor: pointer;
     margin: 0; }
     @media screen and (min-width: 1024px) {
@@ -649,11 +654,18 @@ section.services {
       section.services .list-services li.service-11 {
         background-image: url("../../assets/icons/valor 1.svg"); }
 
+@media screen and (min-width: 768px) {
+  .cards-we {
+    max-width: 550px;
+    margin: 0 auto; } }
 .cards-we .card {
   background-color: #f1f1f1;
   box-shadow: 0 1px 4px 2px #dadada; }
+  @media screen and (min-width: 768px) {
+    .cards-we .card {
+      margin: 3rem; } }
   .cards-we .card .content-card-title {
-    padding: 1rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -663,16 +675,33 @@ section.services {
       color: #000000;
       margin: 0;
       padding-right: 2rem; }
+      @media screen and (min-width: 768px) {
+        .cards-we .card .content-card-title h3 {
+          font-size: 3rem; } }
+  @media screen and (min-width: 768px) {
+    .cards-we .card .card-icon svg {
+      width: 5rem;
+      height: auto; } }
   .cards-we .card p {
     color: #333333;
     padding: 0 2rem 2.5rem;
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      .cards-we .card p {
+        font-size: 2rem; } }
 
+@media screen and (min-width: 768px) {
+  .content-we {
+    max-width: 550px;
+    margin: 0 auto; } }
 .content-we p {
   font-size: 1.8rem;
   font-weight: 400;
   text-align: center;
   margin: 0 auto 2rem; }
+  @media screen and (min-width: 768px) {
+    .content-we p {
+      font-size: 2.2rem; } }
 
 /* @import 'pages/nosotros.scss'; */
 
