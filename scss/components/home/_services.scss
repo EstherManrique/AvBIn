@@ -5,7 +5,7 @@ section.services {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0 1.5rem;
+
 
   @media screen and (min-width: $tablet-BP) {
     background-image: url("../../assets/images/bg_main-tablet.jpg");
@@ -13,6 +13,27 @@ section.services {
 
   @media screen and (min-width: $desktop-BP) {
     background-image: url("../../assets/images/bg_main-desktop.jpg");
+  }
+
+  .main-title {
+    h1 {
+      color: $black;
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+  
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 3.5rem;
+      }
+  
+      @media screen and (min-width: $desktop-BP) {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  .main-subtitle {
+    padding: 0;
   }
 
   .list-services {

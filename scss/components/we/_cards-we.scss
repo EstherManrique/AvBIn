@@ -1,0 +1,27 @@
+.cards-we {
+  .card {
+    background-color: $gray-soft;
+    box-shadow: 0 1px 4px 2px rgb(218, 218, 218);
+    
+    .content-card-title{
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      h3 {
+        font-size: 2.4rem;
+        text-align: center;
+        color: $black;
+        margin: 0;
+        padding-right: 2rem;
+      }
+    }
+
+    p {
+      color: $dark;
+      padding: 0 2rem 2.5rem;
+      text-align: center;
+    }
+  }
+}

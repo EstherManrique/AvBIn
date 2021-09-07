@@ -7,10 +7,6 @@ footer.footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 999;
 
   @media screen and (min-width: $tablet-BP) {
     padding: 1rem;
@@ -60,10 +56,4 @@ footer.footer {
       }
     }
   }
-}
-
-@media screen and (min-width: $tablet-BP) {
-}
-
-@media screen and (min-width: $desktop-BP) {
 }
