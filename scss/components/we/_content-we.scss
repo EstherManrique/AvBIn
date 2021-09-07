@@ -1,8 +1,16 @@
 .content-we {
+  @media screen and (min-width: $tablet-BP) {
+    max-width: 550px;
+    margin: 0 auto;
+  }
   p {
     font-size: 1.8rem;
     font-weight: 400;
     text-align: center;
     margin: 0 auto 2rem;
+
+    @media screen and (min-width: $tablet-BP) {
+     font-size: 2.2rem;
+    }
   }
 }
