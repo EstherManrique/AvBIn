@@ -10,23 +10,45 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+}
 
+body {
+  font-family: $ff-nunito;
+  padding-top: 7.2rem;
+  overflow-x: hidden;
 
-  body {
-    font-family: $ff-nunito;
-    padding-top: 7.2rem;
-    overflow-x: hidden;
-
-    @media screen and (min-width: $tablet-BP) {
-      padding-top: 8rem;
-    }
-
-    @media screen and (min-width: $desktop-BP) {
-        padding-top: 10rem;
-      }
-
-    * {
-        box-sizing: border-box;
-    }
+  @media screen and (min-width: $tablet-BP) {
+    padding-top: 8rem;
   }
+
+  @media screen and (min-width: $desktop-BP) {
+    padding-top: 10rem;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.main-content {
+  min-height: calc(100vh - 12.4rem);
+}
+
+.container {
+  padding: 0 2rem;
+
+  @media screen and (min-width: $tablet-BP) {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop-BP) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.is-fluid {
+  width: 100%;
+  height: auto;
 }

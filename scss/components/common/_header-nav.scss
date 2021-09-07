@@ -1,130 +1,128 @@
 header.header {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 1rem 2rem;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: $white;
 
-    @media screen and (min-width: $tablet-BP) {
-      padding: 1.25rem 4rem;
-    }
+  @media screen and (min-width: $tablet-BP) {
+    padding: 1.25rem 4rem;
+  }
 
-    @media screen and (min-width: $desktop-BP) {
-      padding: 1.5rem 10rem;
-    }
+  @media screen and (min-width: $desktop-BP) {
+    padding: 1.5rem 10rem;
+  }
 
-    .logo {
-      img {
-        width: 6rem;
-        height: auto;
-
-        @media screen and (min-width: $tablet-BP) {
-          width: 7rem;
-        }
-
-        @media screen and (min-width: $desktop-BP) {
-          width: 10rem;
-        }
-      }
-    }
-
-    .menu-btn {
-      width: auto;
+  .logo {
+    img {
+      width: 6rem;
       height: auto;
-      border: none;
-      background: none;
-
-      @media screen and (min-width: $desktop-BP) {
-        display: none;
-      }
-
-      .none {
-        display: none;
-      }
-    }
-
-    .menu {
-      position: fixed;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: $gray-soft;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.75s ease;
-
-      @media screen and (min-width: $desktop-BP) {
-        background-color: $white;
-        position: static;
-        height: auto;
-        opacity: 1;
-        pointer-events: auto;
-      }
-
-      .menu-nav {
-        list-style: none;
-        padding: 5rem;
-
-        @media screen and (min-width: $tablet-BP) {
-          padding: 7rem;
-        }
-
-        @media screen and (min-width: $desktop-BP) {
-          flex-direction: row;
-          display: flex;
-          justify-content: flex-end;
-          padding: 0;
-          margin: 0;
-          line-height: normal;
-          align-items: center;
-          height: 100%;
-        }
-
-        li {
-          padding: 3rem 0;
-
-          @media screen and (min-width: $tablet-BP) {
-            padding: 5rem;
-          }
-
-          @media screen and (min-width: $desktop-BP) {
-            padding: 0 0 0 2rem;
-          }
-        }
-
-        a {
-          padding: 2rem 0;
-          font-size: 1.5rem;
-          font-weight: bold;
-          text-align: center;
-          text-decoration: none;
-          color: $dark;
-
-          @media screen and (min-width: $tablet-BP) {
-            font-size: 2.5rem;
-          }
-
-          @media screen and (min-width: $desktop-BP) {
-            font-size: 2rem;
-          }
-        }
-      }
-    }
-
-    .menu.is-active {
-      opacity: 1;
-      pointer-events: auto;
-      margin-top: 5.8rem;
 
       @media screen and (min-width: $tablet-BP) {
-        margin-top: 7rem;
+        width: 7rem;
       }
+
+      @media screen and (min-width: $desktop-BP) {
+        width: 10rem;
+      }
+    }
+  }
+
+  .menu-btn {
+    width: auto;
+    height: auto;
+    border: none;
+    background: none;
+
+    @media screen and (min-width: $desktop-BP) {
+      display: none;
+    }
+
+    .none {
+      display: none;
+    }
+  }
+
+  .menu {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $gray-soft;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.75s ease;
+
+    @media screen and (min-width: $desktop-BP) {
+      background-color: $white;
+      position: static;
+      height: auto;
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .menu-nav {
+      list-style: none;
+      padding: 5rem;
+
+      @media screen and (min-width: $tablet-BP) {
+        padding: 7rem;
+      }
+
+      @media screen and (min-width: $desktop-BP) {
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        margin: 0;
+        line-height: normal;
+        align-items: center;
+        height: 100%;
+      }
+
+      li {
+        padding: 3rem 0;
+
+        @media screen and (min-width: $tablet-BP) {
+          padding: 5rem;
+        }
+
+        @media screen and (min-width: $desktop-BP) {
+          padding: 0 0 0 2rem;
+        }
+      }
+
+      a {
+        padding: 2rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: $dark;
+
+        @media screen and (min-width: $tablet-BP) {
+          font-size: 2.5rem;
+        }
+
+        @media screen and (min-width: $desktop-BP) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .menu.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    margin-top: 5.8rem;
+
+    @media screen and (min-width: $tablet-BP) {
+      margin-top: 7rem;
     }
   }
 }
