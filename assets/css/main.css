@@ -722,7 +722,6 @@ section.services {
   overflow: hidden;
   position: relative; }
   .container-slider .hero-slider {
-    display: flex;
     text-align: center; }
     .container-slider .hero-slider .slider-section {
       width: 100%;
