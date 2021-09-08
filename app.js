@@ -59,6 +59,8 @@
   btnLeft.addEventListener("click", function () {
     Previus();
   });
+
+  /* Para que el slider sea automatico */
   
   setInterval(function() {
     Next();
