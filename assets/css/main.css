@@ -724,7 +724,7 @@ section.services {
   .container-slider .hero-slider {
     display: flex;
     width: 400%;
-    height: 17.5rem;
+    height: auto;
     text-align: center;
     margin-left: -100%; }
     .container-slider .hero-slider .slider-section {
@@ -745,8 +745,15 @@ section.services {
         align-items: center;
         justify-content: center; }
         .container-slider .hero-slider .slider-section .slider-info h3 {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
+          font-weight: 900;
           color: #ffffff; }
+          @media screen and (min-width: 768px) {
+            .container-slider .hero-slider .slider-section .slider-info h3 {
+              font-size: 4rem; } }
+          @media screen and (min-width: 1024px) {
+            .container-slider .hero-slider .slider-section .slider-info h3 {
+              font-size: 6rem; } }
   .container-slider .slider-btn {
     position: absolute;
     width: 40px;
@@ -758,8 +765,16 @@ section.services {
   .container-slider .btn-left {
     background: url("../../../assets/icons/arrow-left.svg") no-repeat center;
     left: 0.1rem; }
+    @media screen and (min-width: 768px) {
+      .container-slider .btn-left {
+        background: url("../../../assets/icons/arrow-left.png") no-repeat center;
+        left: 1rem; } }
   .container-slider .btn-right {
     background: url("../../../assets/icons/arrow-right.svg") no-repeat center;
     right: 0.1rem; }
+    @media screen and (min-width: 768px) {
+      .container-slider .btn-right {
+        background: url("../../../assets/icons/arrow-right.png") no-repeat center;
+        right: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,7 +7,7 @@
   .hero-slider {
     display: flex;
     width: 400%;
-    height: 17.5rem;
+    height: auto;
     text-align: center;
     margin-left: -100%;
 
@@ -31,10 +31,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+
         h3 {
-          font-size: 2.5rem;
+          font-size: 2.2rem;
+          font-weight: 900;
           color: $white;
+
+          @media screen and (min-width: $tablet-BP) {
+            font-size: 4rem;
+          }
+
+          @media screen and (min-width: $desktop-BP) {
+            font-size: 6rem;
+          }
         }
       }
     }
@@ -50,14 +59,23 @@
     cursor: pointer;
   }
 
-
   .btn-left {
-    background: url('../../../assets/icons/arrow-left.svg') no-repeat center;
+    background: url("../../../assets/icons/arrow-left.svg") no-repeat center;
     left: 0.1rem;
+
+    @media screen and (min-width: $tablet-BP) {
+      background: url("../../../assets/icons/arrow-left.png") no-repeat center;
+      left: 1rem;
+    }
   }
 
   .btn-right {
-    background: url('../../../assets/icons/arrow-right.svg') no-repeat center;
+    background: url("../../../assets/icons/arrow-right.svg") no-repeat center;
     right: 0.1rem;
+
+    @media screen and (min-width: $tablet-BP) {
+      background: url("../../../assets/icons/arrow-right.png") no-repeat center;
+      right: 1rem;
+    }
   }
 }
