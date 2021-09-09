@@ -62,8 +62,8 @@
 
   /* Para que el slider sea automatico */
   
-  setInterval(function() {
+/*   setInterval(function() {
     Next();
-  }, 5000);
+  }, 5000); */
   
 })(document);
