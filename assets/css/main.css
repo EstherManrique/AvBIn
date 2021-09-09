@@ -716,50 +716,67 @@ section.services {
     .content-we p {
       font-size: 2.2rem; } }
 
-.container-cards {
-  width: 100%;
-  height: auto; }
-  .container-cards .cards-services {
-    width: 83.34%;
-    height: auto;
-    text-align: center;
-    margin: 1rem auto; }
-    .container-cards .cards-services .card-inmuebles {
+section.cards-services .container .cards-wrapper .card-services {
+  text-align: center;
+  margin: 1rem auto;
+  position: relative; }
+  section.cards-services .container .cards-wrapper .card-services .card-image {
+    height: 25rem;
+    overflow: hidden; }
+    section.cards-services .container .cards-wrapper .card-services .card-image img {
       width: 100%;
-      position: relative; }
-      .container-cards .cards-services .card-inmuebles img {
-        object-fit: cover;
-        cursor: pointer; }
-      .container-cards .cards-services .card-inmuebles .card-info {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
+      height: 100%;
+      object-fit: cover; }
+  section.cards-services .container .cards-wrapper .card-services .card-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+    color: #ffffff; }
+    section.cards-services .container .cards-wrapper .card-services .card-info .card-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 auto; }
+    section.cards-services .container .cards-wrapper .card-services .card-info .card-paragraph {
+      font-size: 2rem;
+      font-weight: 100;
+      margin-bottom: 4rem; }
+    section.cards-services .container .cards-wrapper .card-services .card-info .card-button button {
+      width: 15rem;
+      height: 4rem;
+      font-size: 1.8rem;
+      font-weight: 100;
+      border: none;
+      border-radius: 0.3rem;
+      background-color: #f2f2f2;
+      cursor: pointer; }
 
-.container-slider {
+section.services-slider {
   width: 100%;
   height: auto;
   overflow: hidden;
   position: relative; }
-  .container-slider .hero-slider {
+  section.services-slider .hero-slider {
     display: flex;
     width: 400%;
     height: auto;
     text-align: center;
     margin-left: -100%; }
-    .container-slider .hero-slider .slider-section {
+    section.services-slider .hero-slider .slider-section {
       width: 100%;
       position: relative; }
-      .container-slider .hero-slider .slider-section img {
+      section.services-slider .hero-slider .slider-section img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover; }
-      .container-slider .hero-slider .slider-section .slider-info {
+      section.services-slider .hero-slider .slider-section .slider-info {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -768,17 +785,17 @@ section.services {
         display: flex;
         align-items: center;
         justify-content: center; }
-        .container-slider .hero-slider .slider-section .slider-info h3 {
+        section.services-slider .hero-slider .slider-section .slider-info h3 {
           font-size: 2.2rem;
           font-weight: 900;
           color: #ffffff; }
           @media screen and (min-width: 768px) {
-            .container-slider .hero-slider .slider-section .slider-info h3 {
+            section.services-slider .hero-slider .slider-section .slider-info h3 {
               font-size: 4rem; } }
           @media screen and (min-width: 1024px) {
-            .container-slider .hero-slider .slider-section .slider-info h3 {
+            section.services-slider .hero-slider .slider-section .slider-info h3 {
               font-size: 6rem; } }
-  .container-slider .slider-btn {
+  section.services-slider .slider-btn {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -786,18 +803,18 @@ section.services {
     transform: translateY(-50%);
     display: flex;
     cursor: pointer; }
-  .container-slider .btn-left {
+  section.services-slider .btn-left {
     background: url("../icons/arrow-left.svg") no-repeat center;
     left: 0.1rem; }
     @media screen and (min-width: 768px) {
-      .container-slider .btn-left {
+      section.services-slider .btn-left {
         background: url("../icons/arrow-left.png") no-repeat center;
         left: 1rem; } }
-  .container-slider .btn-right {
+  section.services-slider .btn-right {
     background: url("../icons/arrow-right.svg") no-repeat center;
     right: 0.1rem; }
     @media screen and (min-width: 768px) {
-      .container-slider .btn-right {
+      section.services-slider .btn-right {
         background: url("../icons/arrow-right.png") no-repeat center;
         right: 1rem; } }
 
