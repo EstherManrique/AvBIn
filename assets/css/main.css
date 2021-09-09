@@ -720,9 +720,13 @@ section.cards-services .container .cards-wrapper .card-services {
   text-align: center;
   margin: 1rem auto;
   position: relative; }
-  section.cards-services .container .cards-wrapper .card-services .card-image img {
-    object-fit: cover;
-    cursor: pointer; }
+  section.cards-services .container .cards-wrapper .card-services .card-image {
+    height: 25rem;
+    overflow: hidden; }
+    section.cards-services .container .cards-wrapper .card-services .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   section.cards-services .container .cards-wrapper .card-services .card-info {
     position: absolute;
     top: 0;
@@ -733,8 +737,25 @@ section.cards-services .container .cards-wrapper .card-services {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 2.5rem;
     color: #ffffff; }
+    section.cards-services .container .cards-wrapper .card-services .card-info .card-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 auto; }
+    section.cards-services .container .cards-wrapper .card-services .card-info .card-paragraph {
+      font-size: 2rem;
+      font-weight: 100;
+      margin-bottom: 4rem; }
+    section.cards-services .container .cards-wrapper .card-services .card-info .card-button button {
+      width: 15rem;
+      height: 4rem;
+      font-size: 1.8rem;
+      font-weight: 100;
+      border: none;
+      border-radius: 0.3rem;
+      background-color: #f2f2f2;
+      cursor: pointer; }
 
 section.services-slider {
   width: 100%;

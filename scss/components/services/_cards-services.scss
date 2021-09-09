@@ -1,0 +1,60 @@
+section.cards-services {
+  .container {
+    .cards-wrapper {
+      .card-services {
+        text-align: center;
+        margin: 1rem auto;
+        position: relative;
+
+        .card-image {
+          height: 25rem;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .card-info {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 2.5rem;
+          color: $white;
+
+          .card-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 auto;
+          }
+
+          .card-paragraph {
+            font-size: 2rem;
+            font-weight: 100;
+            margin-bottom: 4rem;
+          }
+
+          .card-button {
+            button {
+              width: 15rem;
+              height: 4rem;
+              font-size: 1.8rem;
+              font-weight: 100;
+              border: none;
+              border-radius: 0.3rem;
+              background-color: $gray-soft-1;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
