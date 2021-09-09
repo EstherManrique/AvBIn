@@ -632,27 +632,27 @@ section.services {
           section.services .list-services li a {
             font-size: 2rem; } }
       section.services .list-services li.service-1 {
-        background-image: url("../../assets/icons/010-edificios.svg"); }
+        background-image: url("../icons/010-edificios.svg"); }
       section.services .list-services li.service-2 {
-        background-image: url("../../assets/icons/004-estadisticas.svg"); }
+        background-image: url("../icons/004-estadisticas.svg"); }
       section.services .list-services li.service-3 {
-        background-image: url("../../assets/icons/007-analisis-de-mercado.svg"); }
+        background-image: url("../icons/007-analisis-de-mercado.svg"); }
       section.services .list-services li.service-4 {
-        background-image: url("../../assets/icons/009-estado-financiero.svg"); }
+        background-image: url("../icons/009-estado-financiero.svg"); }
       section.services .list-services li.service-5 {
-        background-image: url("../../assets/icons/activos 1.svg"); }
+        background-image: url("../icons/activos 1.svg"); }
       section.services .list-services li.service-6 {
-        background-image: url("../../assets/icons/edificio-de-oficinas 1.svg"); }
+        background-image: url("../icons/edificio-de-oficinas 1.svg"); }
       section.services .list-services li.service-7 {
-        background-image: url("../../assets/icons/003-ruedas-dentadas.svg"); }
+        background-image: url("../icons/003-ruedas-dentadas.svg"); }
       section.services .list-services li.service-8 {
-        background-image: url("../../assets/icons/006-cadena-de-valor 1.svg"); }
+        background-image: url("../icons/006-cadena-de-valor 1.svg"); }
       section.services .list-services li.service-9 {
-        background-image: url("../../assets/icons/005-buscar.svg"); }
+        background-image: url("../icons/005-buscar.svg"); }
       section.services .list-services li.service-10 {
-        background-image: url("../../assets/icons/012-casas 1.svg"); }
+        background-image: url("../icons/012-casas 1.svg"); }
       section.services .list-services li.service-11 {
-        background-image: url("../../assets/icons/valor 1.svg"); }
+        background-image: url("../icons/valor 1.svg"); }
 
 .cards-we {
  /* @media screen and (min-width: $tablet-BP) {
@@ -716,6 +716,30 @@ section.services {
     .content-we p {
       font-size: 2.2rem; } }
 
+.container-cards {
+  width: 100%;
+  height: auto; }
+  .container-cards .cards-services {
+    width: 83.34%;
+    height: auto;
+    text-align: center;
+    margin: 1rem auto; }
+    .container-cards .cards-services .card-inmuebles {
+      width: 100%;
+      position: relative; }
+      .container-cards .cards-services .card-inmuebles img {
+        object-fit: cover;
+        cursor: pointer; }
+      .container-cards .cards-services .card-inmuebles .card-info {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
 .container-slider {
   width: 100%;
   height: auto;
@@ -763,18 +787,18 @@ section.services {
     display: flex;
     cursor: pointer; }
   .container-slider .btn-left {
-    background: url("../../../assets/icons/arrow-left.svg") no-repeat center;
+    background: url("../icons/arrow-left.svg") no-repeat center;
     left: 0.1rem; }
     @media screen and (min-width: 768px) {
       .container-slider .btn-left {
-        background: url("../../../assets/icons/arrow-left.png") no-repeat center;
+        background: url("../icons/arrow-left.png") no-repeat center;
         left: 1rem; } }
   .container-slider .btn-right {
-    background: url("../../../assets/icons/arrow-right.svg") no-repeat center;
+    background: url("../icons/arrow-right.svg") no-repeat center;
     right: 0.1rem; }
     @media screen and (min-width: 768px) {
       .container-slider .btn-right {
-        background: url("../../../assets/icons/arrow-right.png") no-repeat center;
+        background: url("../icons/arrow-right.png") no-repeat center;
         right: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */
