@@ -1,0 +1,40 @@
+.cards-modals {
+  position: relative;
+  z-index: 2;
+  .modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    display: none;
+    transition: all 1s;
+
+    .modals-content {
+      width: 80%;
+      max-width: 80rem;
+      margin: auto;
+      flex-direction: row;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      background-color: pink;
+  
+      .modal-info {
+        h2 {
+          border-bottom: medium solid blue;
+          margin: 1rem auto;
+          padding: 0.5rem 0;
+          color: var(--title-color);
+        }
+      }
+    }
+  }
+
+
+}

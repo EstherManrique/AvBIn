@@ -59,7 +59,7 @@ const Next = (d, slider) => {
     slider.insertAdjacentElement("beforeend", sliderSectionFirst);
     slider.style.marginLeft = "-100%";
   }, 500);
-}
+};
 
 const Previus = (d, slider) => {
   let sliderSection = d.querySelectorAll(".slider-section");
@@ -72,4 +72,93 @@ const Previus = (d, slider) => {
     slider.insertAdjacentElement("afterbegin", sliderSectionLast);
     slider.style.marginLeft = "-100%";
   }, 500);
+};
+
+/* Json */
+
+const dataServices = {
+  "inmuebles": {
+    icon: "",
+    title: "Inmuebles",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "maquinaria-y-equipo": {
+    icon: "",
+    title: "Maquinaria y Equipo",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "negocios-en-marcha": {
+    icon: "",
+    title: "Negocios En Marcha",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "estudios-de-factibilidad": {
+    icon: "",
+    title: "Estudios De Factibilidad",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "evaluacion-de-proyectos-inmobliarios": {
+    icon: "",
+    title: "Evaluación de Proyectos Inmobiliarios",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "analisis-de-inversion-inmobiliaria": {
+    icon: "",
+    title: "Análisis de Inversión Inmobiliaria",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "reexpresion-de-estados-financieros": {
+    icon: "",
+    title: "Reexpresión de Estados Financieros",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "avaluo-maestro": {
+    icon: "",
+    title: "Avalúo Maestro",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "justipreciacion-de-rentas": {
+    icon: "",
+    title: "Justipreciación de Rentas",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "opinion-de-valor": {
+    icon: "",
+    title: "Opinión de Valor",
+    description: "dggdhhfhfjdjdfj",
+  },
+  "regimen-de-propiedad-en-condominio": {
+    icon: "",
+    title: "Régimen de Propiedad en Condominio",
+    description: "dggdhhfhfjdjdfj",
+  },
+};
+
+const servicesButtons = document.querySelectorAll("[data-modal-id]");
+if (servicesButtons.length) {
+  const modal = document.querySelector(".cards-modals .modal");
+  const modalClose = modal.querySelector(".icon-modal-close");
+  const modalInfo = modal.querySelector(".modal-info");
+  let modalContent = "";
+
+  modalClose.addEventListener("click", () => {
+    toggleModal(modal, "none");
+  })
+  
+  servicesButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      let service = button.dataset.modalId;
+      let serviceInfo = dataServices[service];
+      modalContent = `<span class="icon-${ service }"></span>
+      <h2>${ serviceInfo.title }</h2>
+      <p>${ serviceInfo.description }</p>`
+      modalInfo.innerHTML = "";
+      modalInfo.insertAdjacentHTML("afterbegin", modalContent)
+      toggleModal(modal, "flex")
+    });
+  });
+}
+
+const toggleModal = (modal, display) => {
+  modal.style.display = display;
 }
