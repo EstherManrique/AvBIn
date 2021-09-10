@@ -12,7 +12,8 @@
     justify-content: center;
     align-items: center;
     background-color: gray;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     transition: all 1s;
 
     .modals-content {
@@ -24,7 +25,7 @@
       display: flex;
       flex-direction: column;
       background-color: pink;
-  
+
       .modal-info {
         h2 {
           border-bottom: medium solid blue;
@@ -35,6 +36,4 @@
       }
     }
   }
-
-
 }

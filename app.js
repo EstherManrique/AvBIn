@@ -142,7 +142,7 @@ if (servicesButtons.length) {
   let modalContent = "";
 
   modalClose.addEventListener("click", () => {
-    toggleModal(modal, "none");
+    toggleModal(modal, 0, "none");
   })
   
   servicesButtons.forEach((button) => {
@@ -154,11 +154,12 @@ if (servicesButtons.length) {
       <p>${ serviceInfo.description }</p>`
       modalInfo.innerHTML = "";
       modalInfo.insertAdjacentHTML("afterbegin", modalContent)
-      toggleModal(modal, "flex")
+      toggleModal(modal, 1, "all")
     });
   });
 }
 
-const toggleModal = (modal, display) => {
-  modal.style.display = display;
+const toggleModal = (modal, opacity, pointer) => {
+  modal.style.opacity = opacity;
+  modal.style.pointerEvents = pointer;
 }

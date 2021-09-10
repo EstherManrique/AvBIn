@@ -852,7 +852,8 @@ section.cards-services .container {
     justify-content: center;
     align-items: center;
     background-color: gray;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
     transition: all 1s; }
     .cards-modals .modal .modals-content {
       width: 80%;
