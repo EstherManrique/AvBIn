@@ -1,14 +1,57 @@
 section.cards-services {
   .container {
     .cards-wrapper {
+      margin: 2rem auto;
+
+      @media screen and (min-width: $tablet-BP) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        justify-content: space-around;
+        align-content: center;
+
+        .card-services:last-child {
+          margin-left: 50%;
+        }
+      }
+
+      @media screen and (min-width: $desktop-BP) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        /* margin-top: -9rem; */
+
+        .card-services:nth-last-child(2) {
+          margin-left: 50%; 
+        }
+
+/*         .card-services:nth-last-child(-n+2) {
+          border: 1px solid blue;
+          grid-column: span 2;
+          width: 50%;
+          justify-self: center
+        } */
+
+        
+      }
+
       .card-services {
         text-align: center;
         margin: 1rem auto;
         position: relative;
 
+        @media screen and (min-width: $tablet-BP) {
+          width: 100%;
+          margin: 0 auto;
+        }
+
         .card-image {
           height: 25rem;
           overflow: hidden;
+
+          @media screen and (min-width: $tablet-BP) {
+            height: 30rem;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -30,7 +73,7 @@ section.cards-services {
           color: $white;
 
           .card-title {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             font-weight: 700;
             margin: 0 auto;
           }
