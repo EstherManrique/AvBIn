@@ -77,7 +77,7 @@ const Previus = (d, slider) => {
 /* Json */
 
 const dataServices = {
-  "inmuebles": {
+  inmuebles: {
     icon: "",
     title: "Inmuebles",
     description: "dggdhhfhfjdjdfj",
@@ -143,23 +143,36 @@ if (servicesButtons.length) {
 
   modalClose.addEventListener("click", () => {
     toggleModal(modal, 0, "none");
-  })
-  
+  });
+
   servicesButtons.forEach((button) => {
     button.addEventListener("click", () => {
       let service = button.dataset.modalId;
       let serviceInfo = dataServices[service];
-      modalContent = `<span class="icon-${ service }"></span>
-      <h2>${ serviceInfo.title }</h2>
-      <p>${ serviceInfo.description }</p>`
+      modalContent = `<span class="icon-${service}"></span>
+      <h2>${serviceInfo.title}</h2>
+      <p>${serviceInfo.description}</p>`;
       modalInfo.innerHTML = "";
-      modalInfo.insertAdjacentHTML("afterbegin", modalContent)
-      toggleModal(modal, 1, "all")
+      modalInfo.insertAdjacentHTML("afterbegin", modalContent);
+      toggleModal(modal, 1, "all");
     });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    let hash = window.location.hash;
+    if (hash) {
+      hash = hash.replace("#", "");
+      const buttonHash = document.querySelector(
+        '[data-modal-id="' + hash + '"]'
+      );
+      if (buttonHash) {
+        buttonHash.click();
+      }
+    }
   });
 }
 
 const toggleModal = (modal, opacity, pointer) => {
   modal.style.opacity = opacity;
   modal.style.pointerEvents = pointer;
-}
+};
