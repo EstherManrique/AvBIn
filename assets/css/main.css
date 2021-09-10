@@ -836,7 +836,14 @@ section.cards-services .container {
           border: none;
           border-radius: 0.3rem;
           background-color: #f2f2f2;
-          cursor: pointer; }
+          cursor: pointer;
+          transition: all 0.3s ease-in-out; }
+          @media screen and (min-width: 1024px) {
+            section.cards-services .container .cards-wrapper .card-services .card-info .card-button button:hover {
+              transform: scale(1.03);
+              transition: all 0.3s ease-in-out; } }
+          section.cards-services .container .cards-wrapper .card-services .card-info .card-button button a {
+            text-decoration: none; }
 
 .cards-modals {
   position: relative;

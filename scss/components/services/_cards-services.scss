@@ -74,6 +74,18 @@ section.cards-services {
               border-radius: 0.3rem;
               background-color: $gray-soft-1;
               cursor: pointer;
+              transition: all 0.3s ease-in-out;
+              
+              @media screen and (min-width: $desktop-BP) {
+                &:hover {
+                  transform: scale(1.03);
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+
+              a {
+                text-decoration: none;
+              }
             }
           }
         }
