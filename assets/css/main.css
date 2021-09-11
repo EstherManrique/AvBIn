@@ -640,19 +640,19 @@ section.services {
       section.services .list-services li.service-4 {
         background-image: url("../icons/009-estado-financiero.svg"); }
       section.services .list-services li.service-5 {
-        background-image: url("../icons/activos 1.svg"); }
+        background-image: url("../icons/activos-1.svg"); }
       section.services .list-services li.service-6 {
-        background-image: url("../icons/edificio-de-oficinas 1.svg"); }
+        background-image: url("../icons/edificio-de-oficinas-1.svg"); }
       section.services .list-services li.service-7 {
         background-image: url("../icons/003-ruedas-dentadas.svg"); }
       section.services .list-services li.service-8 {
-        background-image: url("../icons/006-cadena-de-valor 1.svg"); }
+        background-image: url("../icons/006-cadena-de-valor-1.svg"); }
       section.services .list-services li.service-9 {
         background-image: url("../icons/005-buscar.svg"); }
       section.services .list-services li.service-10 {
-        background-image: url("../icons/012-casas 1.svg"); }
+        background-image: url("../icons/012-casas-1.svg"); }
       section.services .list-services li.service-11 {
-        background-image: url("../icons/valor 1.svg"); }
+        background-image: url("../icons/valor-1.svg"); }
 
 .cards-we {
  /* @media screen and (min-width: $tablet-BP) {
@@ -716,79 +716,6 @@ section.services {
     .content-we p {
       font-size: 2.2rem; } }
 
-section.cards-services .container .cards-wrapper {
-  margin: 2rem auto; }
-  @media screen and (min-width: 768px) {
-    section.cards-services .container .cards-wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 2rem;
-      justify-content: space-around;
-      align-content: center; }
-      section.cards-services .container .cards-wrapper .card-services:last-child {
-        margin-left: 50%; } }
-  @media screen and (min-width: 1024px) {
-    section.cards-services .container .cards-wrapper {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2rem;
-      /* margin-top: -9rem; */
-      /*         .card-services:nth-last-child(-n+2) {
-                border: 1px solid blue;
-                grid-column: span 2;
-                width: 50%;
-                justify-self: center
-              } */ }
-      section.cards-services .container .cards-wrapper .card-services:nth-last-child(2) {
-        margin-left: 50%; } }
-  section.cards-services .container .cards-wrapper .card-services {
-    text-align: center;
-    margin: 1rem auto;
-    position: relative; }
-    @media screen and (min-width: 768px) {
-      section.cards-services .container .cards-wrapper .card-services {
-        width: 100%;
-        margin: 0 auto; } }
-    section.cards-services .container .cards-wrapper .card-services .card-image {
-      height: 25rem;
-      overflow: hidden; }
-      @media screen and (min-width: 768px) {
-        section.cards-services .container .cards-wrapper .card-services .card-image {
-          height: 30rem; } }
-      section.cards-services .container .cards-wrapper .card-services .card-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    section.cards-services .container .cards-wrapper .card-services .card-info {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2.5rem;
-      color: #ffffff; }
-      section.cards-services .container .cards-wrapper .card-services .card-info .card-title {
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin: 0 auto; }
-      section.cards-services .container .cards-wrapper .card-services .card-info .card-paragraph {
-        font-size: 2rem;
-        font-weight: 100;
-        margin-bottom: 4rem; }
-      section.cards-services .container .cards-wrapper .card-services .card-info .card-button button {
-        width: 15rem;
-        height: 4rem;
-        font-size: 1.8rem;
-        font-weight: 100;
-        border: none;
-        border-radius: 0.3rem;
-        background-color: #f2f2f2;
-        cursor: pointer; }
-
 section.services-slider {
   width: 100%;
   height: auto;
@@ -849,5 +776,170 @@ section.services-slider {
       section.services-slider .btn-right {
         background: url("../icons/arrow-right.png") no-repeat center;
         right: 1rem; } }
+
+section.cards-services .container {
+  /* transform: translateY(-8rem); */ }
+  section.cards-services .container .cards-wrapper {
+    margin: 2rem auto; }
+    @media screen and (min-width: 768px) {
+      section.cards-services .container .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
+    section.cards-services .container .cards-wrapper .card-services {
+      text-align: center;
+      margin: 1rem auto;
+      position: relative; }
+      @media screen and (min-width: 768px) {
+        section.cards-services .container .cards-wrapper .card-services {
+          width: calc(50% - 2rem);
+          margin: 1rem; } }
+      @media screen and (min-width: 1024px) {
+        section.cards-services .container .cards-wrapper .card-services {
+          width: calc(33.33% - 2rem);
+          margin: 1rem; } }
+      section.cards-services .container .cards-wrapper .card-services .card-image {
+        height: 25rem;
+        overflow: hidden; }
+        @media screen and (min-width: 768px) {
+          section.cards-services .container .cards-wrapper .card-services .card-image {
+            height: 30rem; } }
+        section.cards-services .container .cards-wrapper .card-services .card-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      section.cards-services .container .cards-wrapper .card-services .card-info {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem;
+        color: #ffffff; }
+        @media screen and (min-width: 768px) {
+          section.cards-services .container .cards-wrapper .card-services .card-info {
+            padding: 2rem; } }
+        @media screen and (min-width: 1024px) {
+          section.cards-services .container .cards-wrapper .card-services .card-info {
+            padding: 1.5rem; } }
+        section.cards-services .container .cards-wrapper .card-services .card-info .card-title {
+          font-size: 2.4rem;
+          font-weight: 700;
+          margin: 0 auto; }
+          @media screen and (min-width: 768px) {
+            section.cards-services .container .cards-wrapper .card-services .card-info .card-title {
+              font-size: 2.6rem; } }
+        section.cards-services .container .cards-wrapper .card-services .card-info .card-paragraph {
+          font-size: 2rem;
+          font-weight: 100;
+          margin-bottom: 4rem; }
+        section.cards-services .container .cards-wrapper .card-services .card-info .card-button button {
+          width: 15rem;
+          height: 4rem;
+          font-size: 1.8rem;
+          font-weight: 100;
+          border: none;
+          border-radius: 0.3rem;
+          background-color: #f2f2f2;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out; }
+          @media screen and (min-width: 1024px) {
+            section.cards-services .container .cards-wrapper .card-services .card-info .card-button button:hover {
+              transform: scale(1.03);
+              transition: all 0.3s ease-in-out; } }
+          section.cards-services .container .cards-wrapper .card-services .card-info .card-button button a {
+            text-decoration: none; }
+
+.cards-modals {
+  position: relative;
+  z-index: 2; }
+  .cards-modals .modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s; }
+    .cards-modals .modal .modals-content {
+      width: 80%;
+      max-width: 80rem;
+      margin: auto;
+      flex-direction: row;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      background-color: #ebebeb;
+      border-radius: 0.8rem;
+      position: relative;
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25); }
+      @media screen and (min-width: 768px) {
+        .cards-modals .modal .modals-content {
+          width: 65%;
+          max-width: 65rem;
+          padding: 2.5rem; } }
+      .cards-modals .modal .modals-content div .icon-modal-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: url("../icons/hamburger-close.svg") no-repeat;
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+        border: none; }
+      .cards-modals .modal .modals-content .modal-info {
+        text-align: center; }
+        .cards-modals .modal .modals-content .modal-info span {
+          display: inline-flex;
+          width: 4rem;
+          height: 4rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-top: 2rem; }
+          .cards-modals .modal .modals-content .modal-info span.icon-inmuebles {
+            background-image: url("../icons/010-edificios.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-maquinaria-y-equipo {
+            background-image: url("../icons/003-ruedas-dentadas.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-opinion-de-valor {
+            background-image: url("../icons/valor-1.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-justipreciacion-de-rentas {
+            background-image: url("../icons/activos-1.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-avaluo-maestro {
+            background-image: url("../icons/012-casas-1.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-regimen-de-propiedad-en-condominio {
+            background-image: url("../icons/edificio-de-oficinas-1.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-negocios-en-marcha {
+            background-image: url("../icons/004-estadisticas.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-evaluacion-de-proyectos-inmobliarios {
+            background-image: url("../icons/007-analisis-de-mercado.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-estudios-de-factibilida {
+            background-image: url("../icons/006-cadena-de-valor-1.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-analisis-de-inversion-inmobiliaria {
+            background-image: url("../icons/005-buscar.svg"); }
+          .cards-modals .modal .modals-content .modal-info span.icon-reexpresion-de-estados-financieros {
+            background-image: url("../icons/009-estado-financiero.svg"); }
+        .cards-modals .modal .modals-content .modal-info h2 {
+          font-size: 2.4rem;
+          font-weight: 700;
+          text-align: center;
+          margin: 1rem auto;
+          color: #000000; }
+          @media screen and (min-width: 768px) {
+            .cards-modals .modal .modals-content .modal-info h2 {
+              font-size: 3.5rem; } }
+        .cards-modals .modal .modals-content .modal-info p {
+          font-size: 2rem;
+          font-weight: 200;
+          margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

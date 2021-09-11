@@ -1,38 +1,13 @@
 section.cards-services {
   .container {
+    /* transform: translateY(-8rem); */
     .cards-wrapper {
       margin: 2rem auto;
 
       @media screen and (min-width: $tablet-BP) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-        justify-content: space-around;
-        align-content: center;
-
-        .card-services:last-child {
-          margin-left: 50%;
-        }
-      }
-
-      @media screen and (min-width: $desktop-BP) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
-        /* margin-top: -9rem; */
-
-        .card-services:nth-last-child(2) {
-          margin-left: 50%; 
-        }
-
-/*         .card-services:nth-last-child(-n+2) {
-          border: 1px solid blue;
-          grid-column: span 2;
-          width: 50%;
-          justify-self: center
-        } */
-
-        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .card-services {
@@ -41,8 +16,13 @@ section.cards-services {
         position: relative;
 
         @media screen and (min-width: $tablet-BP) {
-          width: 100%;
-          margin: 0 auto;
+          width: calc(50% - 2rem);
+          margin: 1rem;
+        }
+
+        @media screen and (min-width: $desktop-BP) {
+          width: calc(33.33% - 2rem);
+          margin: 1rem;
         }
 
         .card-image {
@@ -52,6 +32,7 @@ section.cards-services {
           @media screen and (min-width: $tablet-BP) {
             height: 30rem;
           }
+
           img {
             width: 100%;
             height: 100%;
@@ -72,10 +53,23 @@ section.cards-services {
           padding: 2.5rem;
           color: $white;
 
+          @media screen and (min-width: $tablet-BP) {
+            padding: 2rem;
+          }
+
+          @media screen and (min-width: $desktop-BP) {
+            padding: 1.5rem;
+          }
+
           .card-title {
             font-size: 2.4rem;
             font-weight: 700;
             margin: 0 auto;
+
+            @media screen and (min-width: $tablet-BP) {
+              font-size: 2.6rem;
+            }
+
           }
 
           .card-paragraph {
@@ -94,6 +88,18 @@ section.cards-services {
               border-radius: 0.3rem;
               background-color: $gray-soft-1;
               cursor: pointer;
+              transition: all 0.3s ease-in-out;
+              
+              @media screen and (min-width: $desktop-BP) {
+                &:hover {
+                  transform: scale(1.03);
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+
+              a {
+                text-decoration: none;
+              }
             }
           }
         }
