@@ -18,6 +18,7 @@ section.cards-services {
         text-align: center;
         margin: 1rem auto;
         position: relative;
+        box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.50);
 
         @media screen and (min-width: $tablet-BP) {
           width: calc(50% - 2rem);

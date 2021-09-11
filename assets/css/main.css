@@ -791,7 +791,8 @@ section.cards-services .container .cards-wrapper {
   section.cards-services .container .cards-wrapper .card-services {
     text-align: center;
     margin: 1rem auto;
-    position: relative; }
+    position: relative;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5); }
     @media screen and (min-width: 768px) {
       section.cards-services .container .cards-wrapper .card-services {
         width: calc(50% - 2rem);
