@@ -27,7 +27,7 @@
       background-color: $gray-modal;
       border-radius: 0.8rem;
       position: relative;
-      box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
 
       @media screen and (min-width: $tablet-BP) {
         width: 65%;
@@ -57,6 +57,11 @@
           background-size: cover;
           background-repeat: no-repeat;
           margin-top: 2rem;
+
+          @media screen and (min-width: $tablet-BP) {
+            width: 6rem;
+            height: 6rem;
+          }
 
           &.icon-inmuebles {
             background-image: url("../icons/010-edificios.svg");

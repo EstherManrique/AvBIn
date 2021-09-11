@@ -906,6 +906,10 @@ section.cards-services .container {
           background-size: cover;
           background-repeat: no-repeat;
           margin-top: 2rem; }
+          @media screen and (min-width: 768px) {
+            .cards-modals .modal .modals-content .modal-info span {
+              width: 6rem;
+              height: 6rem; } }
           .cards-modals .modal .modals-content .modal-info span.icon-inmuebles {
             background-image: url("../icons/010-edificios.svg"); }
           .cards-modals .modal .modals-content .modal-info span.icon-maquinaria-y-equipo {
