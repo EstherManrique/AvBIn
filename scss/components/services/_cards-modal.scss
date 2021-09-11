@@ -17,19 +17,22 @@
     transition: all 1s;
 
     .modals-content {
-      width: 85%;
-      max-width: 85rem;
+      width: 80%;
+      max-width: 80rem;
       margin: auto;
       flex-direction: row;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       background-color: $gray-modal;
-      border-radius: .8rem;
+      border-radius: 0.8rem;
       position: relative;
-      
+      box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.25);
+
       @media screen and (min-width: $tablet-BP) {
-        
+        width: 65%;
+        max-width: 65rem;
+        padding: 2.5rem;
       }
 
       div {
@@ -98,7 +101,7 @@
           color: $black;
 
           @media screen and (min-width: $tablet-BP) {
-            font-size: 3.6rem;
+            font-size: 3.5rem;
           }
         }
 

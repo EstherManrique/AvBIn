@@ -872,16 +872,22 @@ section.cards-services .container {
     pointer-events: none;
     transition: all 1s; }
     .cards-modals .modal .modals-content {
-      width: 85%;
-      max-width: 85rem;
+      width: 80%;
+      max-width: 80rem;
       margin: auto;
       flex-direction: row;
       padding: 2rem;
       display: flex;
       flex-direction: column;
       background-color: #ebebeb;
-      border-radius: .8rem;
-      position: relative; }
+      border-radius: 0.8rem;
+      position: relative;
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25); }
+      @media screen and (min-width: 768px) {
+        .cards-modals .modal .modals-content {
+          width: 65%;
+          max-width: 65rem;
+          padding: 2.5rem; } }
       .cards-modals .modal .modals-content div .icon-modal-close {
         position: absolute;
         top: 1.5rem;
@@ -930,7 +936,7 @@ section.cards-services .container {
           color: #000000; }
           @media screen and (min-width: 768px) {
             .cards-modals .modal .modals-content .modal-info h2 {
-              font-size: 3.6rem; } }
+              font-size: 3.5rem; } }
         .cards-modals .modal .modals-content .modal-info p {
           font-size: 2rem;
           font-weight: 200;
