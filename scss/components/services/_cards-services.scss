@@ -1,6 +1,10 @@
 section.cards-services {
   .container {
-    /* transform: translateY(-8rem); */
+    @media screen and (min-width: $desktop-BP) {
+      transform: translateY(-8rem);
+      margin-bottom: -8rem;
+    }
+
     .cards-wrapper {
       margin: 2rem auto;
 
