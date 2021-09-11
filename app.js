@@ -74,63 +74,53 @@ const Previus = (d, slider) => {
   }, 500);
 };
 
-/* Json */
+
+/* ******** Modals - JSon ******** */
 
 const dataServices = {
-  inmuebles: {
-    icon: "",
+  "inmuebles": {
     title: "Inmuebles",
-    description: "dggdhhfhfjdjdfj",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "maquinaria-y-equipo": {
-    icon: "",
     title: "Maquinaria y Equipo",
-    description: "dggdhhfhfjdjdfj",
-  },
-  "negocios-en-marcha": {
-    icon: "",
-    title: "Negocios En Marcha",
-    description: "dggdhhfhfjdjdfj",
-  },
-  "estudios-de-factibilidad": {
-    icon: "",
-    title: "Estudios De Factibilidad",
-    description: "dggdhhfhfjdjdfj",
-  },
-  "evaluacion-de-proyectos-inmobliarios": {
-    icon: "",
-    title: "Evaluación de Proyectos Inmobiliarios",
-    description: "dggdhhfhfjdjdfj",
-  },
-  "analisis-de-inversion-inmobiliaria": {
-    icon: "",
-    title: "Análisis de Inversión Inmobiliaria",
-    description: "dggdhhfhfjdjdfj",
-  },
-  "reexpresion-de-estados-financieros": {
-    icon: "",
-    title: "Reexpresión de Estados Financieros",
-    description: "dggdhhfhfjdjdfj",
-  },
-  "avaluo-maestro": {
-    icon: "",
-    title: "Avalúo Maestro",
-    description: "dggdhhfhfjdjdfj",
-  },
-  "justipreciacion-de-rentas": {
-    icon: "",
-    title: "Justipreciación de Rentas",
-    description: "dggdhhfhfjdjdfj",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
   },
   "opinion-de-valor": {
-    icon: "",
     title: "Opinión de Valor",
-    description: "dggdhhfhfjdjdfj",
+    description: "Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+  },
+  "justipreciacion-de-rentas": {
+    title: "Justipreciación de Rentas",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+  },
+  "avaluo-maestro": {
+    title: "Avalúo Maestro",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "regimen-de-propiedad-en-condominio": {
-    icon: "",
     title: "Régimen de Propiedad en Condominio",
-    description: "dggdhhfhfjdjdfj",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+  },
+  "negocios-en-marcha": {
+    title: "Negocios En Marcha",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+  },
+  "evaluacion-de-proyectos-inmobliarios": {
+    title: "Evaluación de Proyectos Inmobiliarios",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+  },
+  "estudios-de-factibilidad": {
+    title: "Estudios De Factibilidad",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
+  },
+  "analisis-de-inversion-inmobiliaria": {
+    title: "Análisis de Inversión Inmobiliaria",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+  },
+  "reexpresion-de-estados-financieros": {
+    title: "Reexpresión de Estados Financieros",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
 };
 

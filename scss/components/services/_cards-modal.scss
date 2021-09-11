@@ -11,27 +11,101 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     pointer-events: none;
     transition: all 1s;
 
     .modals-content {
-      width: 80%;
-      max-width: 80rem;
+      width: 85%;
+      max-width: 85rem;
       margin: auto;
       flex-direction: row;
-      padding: 1rem;
+      padding: 2rem;
       display: flex;
       flex-direction: column;
-      background-color: pink;
+      background-color: $gray-modal;
+      border-radius: .8rem;
+      position: relative;
+      
+      @media screen and (min-width: $tablet-BP) {
+        
+      }
+
+      div {
+        .icon-modal-close {
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+          background: url("../icons/hamburger-close.svg") no-repeat;
+          background-size: cover;
+          width: 2rem;
+          height: 2rem;
+          border: none;
+        }
+      }
 
       .modal-info {
+        text-align: center;
+        span {
+          display: inline-flex;
+          width: 4rem;
+          height: 4rem;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-top: 2rem;
+
+          &.icon-inmuebles {
+            background-image: url("../icons/010-edificios.svg");
+          }
+          &.icon-maquinaria-y-equipo {
+            background-image: url("../icons/003-ruedas-dentadas.svg");
+          }
+          &.icon-opinion-de-valor {
+            background-image: url("../icons/valor-1.svg");
+          }
+          &.icon-justipreciacion-de-rentas {
+            background-image: url("../icons/activos-1.svg");
+          }
+          &.icon-avaluo-maestro {
+            background-image: url("../icons/012-casas-1.svg");
+          }
+          &.icon-regimen-de-propiedad-en-condominio {
+            background-image: url("../icons/edificio-de-oficinas-1.svg");
+          }
+          &.icon-negocios-en-marcha {
+            background-image: url("../icons/004-estadisticas.svg");
+          }
+          &.icon-evaluacion-de-proyectos-inmobliarios {
+            background-image: url("../icons/007-analisis-de-mercado.svg");
+          }
+          &.icon-estudios-de-factibilida {
+            background-image: url("../icons/006-cadena-de-valor-1.svg");
+          }
+          &.icon-analisis-de-inversion-inmobiliaria {
+            background-image: url("../icons/005-buscar.svg");
+          }
+          &.icon-reexpresion-de-estados-financieros {
+            background-image: url("../icons/009-estado-financiero.svg");
+          }
+        }
+
         h2 {
-          border-bottom: medium solid blue;
+          font-size: 2.4rem;
+          font-weight: 700;
+          text-align: center;
           margin: 1rem auto;
-          padding: 0.5rem 0;
-          color: var(--title-color);
+          color: $black;
+
+          @media screen and (min-width: $tablet-BP) {
+            font-size: 3.6rem;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          font-weight: 200;
+          margin: 0 auto;
         }
       }
     }
