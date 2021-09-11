@@ -103,7 +103,7 @@ const dataServices = {
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "negocios-en-marcha": {
-    title: "Negocios En Marcha",
+    title: "Negocios en Marcha",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "evaluacion-de-proyectos-inmobliarios": {
@@ -111,7 +111,7 @@ const dataServices = {
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "estudios-de-factibilidad": {
-    title: "Estudios De Factibilidad",
+    title: "Estudios de Factibilidad",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
   },
   "analisis-de-inversion-inmobiliaria": {

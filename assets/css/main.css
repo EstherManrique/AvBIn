@@ -852,8 +852,10 @@ section.cards-services .container .cards-wrapper {
         transition: all 0.3s ease-in-out; }
         @media screen and (min-width: 1024px) {
           section.cards-services .container .cards-wrapper .card-services .card-info .card-button button:hover {
-            transform: scale(1.03);
-            transition: all 0.3s ease-in-out; } }
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            color: #7d4039;
+            font-weight: bold; } }
         section.cards-services .container .cards-wrapper .card-services .card-info .card-button button a {
           text-decoration: none; }
 
@@ -899,7 +901,14 @@ section.cards-services .container .cards-wrapper {
         background-size: cover;
         width: 2rem;
         height: 2rem;
-        border: none; }
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out; }
+        @media screen and (min-width: 1024px) {
+          .cards-modals .modal .modals-content div .icon-modal-close:hover {
+            transform: scale(1.2);
+            transition: all 0.3s ease-in-out;
+            /* color: $wine; */ } }
       .cards-modals .modal .modals-content .modal-info {
         text-align: center; }
         .cards-modals .modal .modals-content .modal-info span {
