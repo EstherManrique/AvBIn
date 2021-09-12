@@ -635,7 +635,7 @@ section.services {
       section.services .list-services {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem 4rem;
+        grid-gap: 1rem 2rem;
         padding-top: 2.5rem; } }
     section.services .list-services li {
       background-size: 1.8rem;
@@ -649,15 +649,15 @@ section.services {
       section.services .list-services li a {
         text-decoration: none;
         color: #333333;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 2.5;
         font-weight: bold; }
         @media screen and (min-width: 768px) {
           section.services .list-services li a {
-            font-size: 2.5rem; } }
+            font-size: 3rem; } }
         @media screen and (min-width: 1024px) {
           section.services .list-services li a {
-            font-size: 2rem; } }
+            font-size: 3.5rem; } }
       section.services .list-services li.service-1 {
         background-image: url("../icons/010-edificios.svg"); }
       section.services .list-services li.service-2 {
