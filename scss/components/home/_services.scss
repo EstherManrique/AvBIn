@@ -6,7 +6,6 @@ section.services {
   align-items: center;
   justify-content: center;
 
-
   @media screen and (min-width: $tablet-BP) {
     background-image: url("../../assets/images/bg_main-tablet.jpg");
   }
@@ -21,11 +20,11 @@ section.services {
       text-align: center;
       font-size: 1.8rem;
       margin-bottom: 2rem;
-  
+
       @media screen and (min-width: $tablet-BP) {
         font-size: 3.5rem;
       }
-  
+
       @media screen and (min-width: $desktop-BP) {
         font-size: 5rem;
       }
@@ -36,90 +35,91 @@ section.services {
     padding: 0 0 1rem;
   }
 
-  .list-services {
-    text-align: left;
-    list-style: none;
-    padding-left: 0.5rem;
-    padding-bottom: 1rem;
-    cursor: pointer;
-    margin: 0;
-
-    @media screen and (min-width: $desktop-BP) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1rem 2rem;
-      padding-top: 2.5rem;
-    }
-
-    li {
-      background-size: 1.8rem;
-      background-position: left center;
-      background-repeat: no-repeat;
-      padding-left: 3rem;
-
-      @media screen and (min-width: $tablet-BP) {
-        background-size: 2.5rem;
-        padding-left: 5rem;
-      }
-
-      a {
-        text-decoration: none;
-        color: $dark;
-        font-size: 1.8rem;
-        line-height: 2.5;
-        font-weight: bold;
-
-        @media screen and (min-width: $tablet-BP) {
-          font-size: 3rem;
-        }
+  .services-content {
+    .container {
+      padding: 0;
+      .list-services {
+        text-align: left;
+        list-style: none;
+        padding-left: 0.5rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+        margin: 0;
 
         @media screen and (min-width: $desktop-BP) {
-          font-size: 3.5rem;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1rem 2rem;
+          padding-top: 2.5rem;
         }
-      }
 
-      &.service-1 {
-        background-image: url("../icons/010-edificios.svg");
-      }
+        li {
+          background-size: 1.8rem;
+          background-position: left center;
+          background-repeat: no-repeat;
+          padding-left: 3rem;
 
-      &.service-2 {
-        background-image: url("../icons/004-estadisticas.svg");
-      }
+          @media screen and (min-width: $tablet-BP) {
+            background-size: 2.5rem;
+            padding-left: 5rem;
+          }
 
-      &.service-3 {
-        background-image: url("../icons/007-analisis-de-mercado.svg");
-      }
+          a {
+            text-decoration: none;
+            color: $dark;
+            font-size: 1.8rem;
+            line-height: 2.5;
+            font-weight: bold;
 
-      &.service-4 {
-        background-image: url("../icons/009-estado-financiero.svg");
-      }
+            @media screen and (min-width: $tablet-BP) {
+              font-size: 3rem;
+            }
+          }
 
-      &.service-5 {
-        background-image: url("../icons/activos-1.svg");
-      }
+          &.service-1 {
+            background-image: url("../icons/010-edificios.svg");
+          }
 
-      &.service-6 {
-        background-image: url("../icons/edificio-de-oficinas-1.svg");
-      }
+          &.service-2 {
+            background-image: url("../icons/004-estadisticas.svg");
+          }
 
-      &.service-7 {
-        background-image: url("../icons/003-ruedas-dentadas.svg");
-      }
+          &.service-3 {
+            background-image: url("../icons/007-analisis-de-mercado.svg");
+          }
 
-      &.service-8 {
-        background-image: url("../icons/006-cadena-de-valor-1.svg");
-      }
+          &.service-4 {
+            background-image: url("../icons/009-estado-financiero.svg");
+          }
 
-      &.service-9 {
-        background-image: url("../icons/005-buscar.svg");
-      }
+          &.service-5 {
+            background-image: url("../icons/activos-1.svg");
+          }
 
-      &.service-10 {
-        background-image: url("../icons/012-casas-1.svg");
-      }
+          &.service-6 {
+            background-image: url("../icons/edificio-de-oficinas-1.svg");
+          }
 
-      &.service-11 {
-        background-image: url("../icons/valor-1.svg");
+          &.service-7 {
+            background-image: url("../icons/003-ruedas-dentadas.svg");
+          }
+
+          &.service-8 {
+            background-image: url("../icons/006-cadena-de-valor-1.svg");
+          }
+
+          &.service-9 {
+            background-image: url("../icons/005-buscar.svg");
+          }
+
+          &.service-10 {
+            background-image: url("../icons/012-casas-1.svg");
+          }
+
+          &.service-11 {
+            background-image: url("../icons/valor-1.svg");
+          }
+        }
       }
     }
   }
