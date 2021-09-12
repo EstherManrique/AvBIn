@@ -12,6 +12,7 @@
 
 @import 'utils/variables';
 @import 'utils/global';
+@import 'utils/mixins';
 
 @import 'vendors/normalize';
 
@@ -30,5 +31,7 @@
 @import 'components/services/services-slider';
 @import 'components/services/cards-services';
 @import 'components/services/cards-modal';
+
+@import 'components/certifications/certifications';
 
 

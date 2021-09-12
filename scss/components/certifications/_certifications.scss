@@ -1,0 +1,77 @@
+section.content-certifications {
+  .main-subtitle {
+    h2 {
+      font-size: 1.8rem;
+      padding: 0 6rem;
+    }
+  }
+
+  div.acordion {
+    width: 100%;
+    /*   max-width: 10rem; */
+    padding: 2rem;
+    text-align: center;
+
+    .block {
+      margin: 0 0 1rem;
+      padding: 1rem;
+      @include neo(1, 1rem, 1rem);
+
+      &.active {
+        .title-acordion {
+          .title {
+            span {
+              transition: all 0.3s ease-in-out;
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+
+      .title-acordion {
+        cursor: pointer;
+        .title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 0 1rem;
+          padding: 1rem;
+          font-size: 1rem;
+          color: $wine;
+          @include neo(1, 1rem, 1rem);
+        }
+
+        span {
+          display: inline-block;
+          width: 1.5rem;
+          height: 1rem;
+          padding-left: 2rem;
+          transition: all 0.3s ease-in-out;
+
+          &.icon-acordion {
+            background: url("../icons/acordion.svg") no-repeat center;
+          }
+        }
+      }
+
+      img {
+        width: 35%;
+      }
+
+      .content-acordion {
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .block {
+      &.active {
+        .content-acordion {
+          height: 15rem;
+        }
+      }
+    }
+  }
+}
