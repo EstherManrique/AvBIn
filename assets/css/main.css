@@ -986,16 +986,16 @@ section.cards-services .container .cards-wrapper {
           margin: 0 auto; }
 
 section.content-certifications .main-subtitle h2 {
-  font-size: 1.8rem;
-  padding: 0 6rem; }
+  font-size: 2rem;
+  padding: 0 4.5rem; }
 section.content-certifications div.acordion {
   width: 100%;
   /*   max-width: 10rem; */
-  padding: 2rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2rem; }
   section.content-certifications div.acordion .block {
     margin: 0 0 1rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     color: var(--negro);
     transition: all .4s ease;
     border-radius: 1rem;
@@ -1012,7 +1012,7 @@ section.content-certifications div.acordion {
         align-items: center;
         margin: 0 0 1rem;
         padding: 1rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #7d4039;
         color: var(--negro);
         transition: all .4s ease;
@@ -1028,13 +1028,16 @@ section.content-certifications div.acordion {
         section.content-certifications div.acordion .block .title-acordion span.icon-acordion {
           background: url("../icons/acordion.svg") no-repeat center; }
     section.content-certifications div.acordion .block img {
-      width: 35%; }
+      width: 40%; }
     section.content-certifications div.acordion .block .content-acordion {
       height: 0;
       padding: 0;
       overflow: hidden;
       transition: all 0.5s ease; }
+      section.content-certifications div.acordion .block .content-acordion p {
+        padding: 1rem;
+        margin: 0; }
   section.content-certifications div.acordion .block.active .content-acordion {
-    height: 15rem; }
+    height: auto; }
 
 /*# sourceMappingURL=main.css.map */
