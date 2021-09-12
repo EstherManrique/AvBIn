@@ -624,62 +624,61 @@ section.services {
         font-size: 5rem; } }
   section.services .main-subtitle {
     padding: 0 0 1rem; }
-  section.services .list-services {
-    text-align: left;
-    list-style: none;
-    padding-left: 0.5rem;
-    padding-bottom: 1rem;
-    cursor: pointer;
-    margin: 0; }
-    @media screen and (min-width: 1024px) {
-      section.services .list-services {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem 2rem;
-        padding-top: 2.5rem; } }
-    section.services .list-services li {
-      background-size: 1.8rem;
-      background-position: left center;
-      background-repeat: no-repeat;
-      padding-left: 3rem; }
-      @media screen and (min-width: 768px) {
-        section.services .list-services li {
-          background-size: 2.5rem;
-          padding-left: 5rem; } }
-      section.services .list-services li a {
-        text-decoration: none;
-        color: #333333;
-        font-size: 1.8rem;
-        line-height: 2.5;
-        font-weight: bold; }
+  section.services .services-content .container {
+    padding: 0; }
+    section.services .services-content .container .list-services {
+      text-align: left;
+      list-style: none;
+      padding-left: 0.5rem;
+      padding-bottom: 1rem;
+      cursor: pointer;
+      margin: 0; }
+      @media screen and (min-width: 1024px) {
+        section.services .services-content .container .list-services {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1rem 2rem;
+          padding-top: 2.5rem; } }
+      section.services .services-content .container .list-services li {
+        background-size: 1.8rem;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding-left: 3rem; }
         @media screen and (min-width: 768px) {
-          section.services .list-services li a {
-            font-size: 3rem; } }
-        @media screen and (min-width: 1024px) {
-          section.services .list-services li a {
-            font-size: 3.5rem; } }
-      section.services .list-services li.service-1 {
-        background-image: url("../icons/010-edificios.svg"); }
-      section.services .list-services li.service-2 {
-        background-image: url("../icons/004-estadisticas.svg"); }
-      section.services .list-services li.service-3 {
-        background-image: url("../icons/007-analisis-de-mercado.svg"); }
-      section.services .list-services li.service-4 {
-        background-image: url("../icons/009-estado-financiero.svg"); }
-      section.services .list-services li.service-5 {
-        background-image: url("../icons/activos-1.svg"); }
-      section.services .list-services li.service-6 {
-        background-image: url("../icons/edificio-de-oficinas-1.svg"); }
-      section.services .list-services li.service-7 {
-        background-image: url("../icons/003-ruedas-dentadas.svg"); }
-      section.services .list-services li.service-8 {
-        background-image: url("../icons/006-cadena-de-valor-1.svg"); }
-      section.services .list-services li.service-9 {
-        background-image: url("../icons/005-buscar.svg"); }
-      section.services .list-services li.service-10 {
-        background-image: url("../icons/012-casas-1.svg"); }
-      section.services .list-services li.service-11 {
-        background-image: url("../icons/valor-1.svg"); }
+          section.services .services-content .container .list-services li {
+            background-size: 2.5rem;
+            padding-left: 5rem; } }
+        section.services .services-content .container .list-services li a {
+          text-decoration: none;
+          color: #333333;
+          font-size: 1.8rem;
+          line-height: 2.5;
+          font-weight: bold; }
+          @media screen and (min-width: 768px) {
+            section.services .services-content .container .list-services li a {
+              font-size: 3rem; } }
+        section.services .services-content .container .list-services li.service-1 {
+          background-image: url("../icons/010-edificios.svg"); }
+        section.services .services-content .container .list-services li.service-2 {
+          background-image: url("../icons/004-estadisticas.svg"); }
+        section.services .services-content .container .list-services li.service-3 {
+          background-image: url("../icons/007-analisis-de-mercado.svg"); }
+        section.services .services-content .container .list-services li.service-4 {
+          background-image: url("../icons/009-estado-financiero.svg"); }
+        section.services .services-content .container .list-services li.service-5 {
+          background-image: url("../icons/activos-1.svg"); }
+        section.services .services-content .container .list-services li.service-6 {
+          background-image: url("../icons/edificio-de-oficinas-1.svg"); }
+        section.services .services-content .container .list-services li.service-7 {
+          background-image: url("../icons/003-ruedas-dentadas.svg"); }
+        section.services .services-content .container .list-services li.service-8 {
+          background-image: url("../icons/006-cadena-de-valor-1.svg"); }
+        section.services .services-content .container .list-services li.service-9 {
+          background-image: url("../icons/005-buscar.svg"); }
+        section.services .services-content .container .list-services li.service-10 {
+          background-image: url("../icons/012-casas-1.svg"); }
+        section.services .services-content .container .list-services li.service-11 {
+          background-image: url("../icons/valor-1.svg"); }
 
 .cards-we {
  /* @media screen and (min-width: $tablet-BP) {
