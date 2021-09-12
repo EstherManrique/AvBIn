@@ -25,11 +25,6 @@
         Previus(d, slider);
       });
     }
-
-    /* Para que el slider sea automatico */
-    /*   setInterval(function() {
-      Next();
-    }, 5000); */
   }
 
   const $btnMenu = d.querySelector(".menu-btn"),
@@ -74,53 +69,63 @@ const Previus = (d, slider) => {
   }, 500);
 };
 
-
 /* ******** Modals - JSon ******** */
 
 const dataServices = {
-  "inmuebles": {
+  inmuebles: {
     title: "Inmuebles",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "maquinaria-y-equipo": {
     title: "Maquinaria y Equipo",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
   },
   "opinion-de-valor": {
     title: "Opinión de Valor",
-    description: "Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "justipreciacion-de-rentas": {
     title: "Justipreciación de Rentas",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "avaluo-maestro": {
     title: "Avalúo Maestro",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "regimen-de-propiedad-en-condominio": {
     title: "Régimen de Propiedad en Condominio",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "negocios-en-marcha": {
     title: "Negocios en Marcha",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "evaluacion-de-proyectos-inmobliarios": {
     title: "Evaluación de Proyectos Inmobiliarios",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "estudios-de-factibilidad": {
     title: "Estudios de Factibilidad",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit",
   },
   "analisis-de-inversion-inmobiliaria": {
     title: "Análisis de Inversión Inmobiliaria",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
   "reexpresion-de-estados-financieros": {
     title: "Reexpresión de Estados Financieros",
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam sunt aperiam, suscipit, omnis alias quibusdam doloremque ipsa voluptatum error reprehenderit eveniet magni eaque cumque repudiandae harum? Eveniet, est tempora!",
   },
 };
 
@@ -165,4 +170,22 @@ if (servicesButtons.length) {
 const toggleModal = (modal, opacity, pointer) => {
   modal.style.opacity = opacity;
   modal.style.pointerEvents = pointer;
+};
+
+/* Acordeon */
+const blocks = document.querySelectorAll(".acordion .block");
+if (blocks.length) {
+  blocks.forEach((block) => {
+    const title = block.querySelector(".title");
+    title.addEventListener("click", () => {
+      if (block.classList.contains("active")) {
+        block.classList.remove("active");
+      } else {
+        blocks.forEach((b) => {
+          b.classList.remove("active");
+        });
+        block.classList.add("active");
+      }
+    });
+  });
 };

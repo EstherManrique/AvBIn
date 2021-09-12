@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*** AQUI IMPORTO LOS ARCHIVOS ***/
 /*** EL ORDEN DE LOS ARCHIVOS A IMPORTAR (IMPORTA) ***/
 /*-----------------------------------*\
@@ -19,6 +20,29 @@
 /*-----------------------------------*\
     COLORS
 \*-----------------------------------*/
+/*-----------------------------------*\
+    VARIABLES MIXINS
+\*-----------------------------------*/
+/* Aquí definimos las Custom properties */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif; }
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50; } }
 /* LO QUE SE USA EN EL SITIO EN GENARAL */
 /*-----------------------------------*\
     UNIVERSAL
@@ -26,7 +50,6 @@
 /* :root {
   max-width: 1200px;  ******PREGNTAR********
 } */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
@@ -464,7 +487,11 @@ header.header {
         pointer-events: auto; } }
     header.header .menu .menu-nav {
       list-style: none;
-      padding: 5rem; }
+      padding: 5rem;
+      /*       a:hover {
+              border-bottom: 1px solid red;
+              transition: all 0.5s ease;
+            } */ }
       @media screen and (min-width: 768px) {
         header.header .menu .menu-nav {
           padding: 7rem; } }
@@ -957,5 +984,57 @@ section.cards-services .container .cards-wrapper {
           font-size: 2rem;
           font-weight: 200;
           margin: 0 auto; }
+
+section.content-certifications .main-subtitle h2 {
+  font-size: 1.8rem;
+  padding: 0 6rem; }
+section.content-certifications div.acordion {
+  width: 100%;
+  /*   max-width: 10rem; */
+  padding: 2rem;
+  text-align: center; }
+  section.content-certifications div.acordion .block {
+    margin: 0 0 1rem;
+    padding: 1rem;
+    color: var(--negro);
+    transition: all .4s ease;
+    border-radius: 1rem;
+    background-color: var(--blanco);
+    box-shadow: 1rem 1rem 2rem var(--sombra-ppal), -1rem -1rem 2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent; }
+    section.content-certifications div.acordion .block.active .title-acordion .title span {
+      transition: all 0.3s ease-in-out;
+      transform: rotate(180deg); }
+    section.content-certifications div.acordion .block .title-acordion {
+      cursor: pointer; }
+      section.content-certifications div.acordion .block .title-acordion .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 1rem;
+        padding: 1rem;
+        font-size: 1rem;
+        color: #7d4039;
+        color: var(--negro);
+        transition: all .4s ease;
+        border-radius: 1rem;
+        background-color: var(--blanco);
+        box-shadow: 1rem 1rem 2rem var(--sombra-ppal), -1rem -1rem 2rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent; }
+      section.content-certifications div.acordion .block .title-acordion span {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1rem;
+        padding-left: 2rem;
+        transition: all 0.3s ease-in-out; }
+        section.content-certifications div.acordion .block .title-acordion span.icon-acordion {
+          background: url("../icons/acordion.svg") no-repeat center; }
+    section.content-certifications div.acordion .block img {
+      width: 35%; }
+    section.content-certifications div.acordion .block .content-acordion {
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: all 0.5s ease; }
+  section.content-certifications div.acordion .block.active .content-acordion {
+    height: 15rem; }
 
 /*# sourceMappingURL=main.css.map */
