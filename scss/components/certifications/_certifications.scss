@@ -3,6 +3,14 @@ section.content-certifications {
     h2 {
       font-size: 2rem;
       padding: 0 4.5rem;
+
+      @media screen and (min-width: $tablet-BP) {
+        font-size: 3.5rem;
+      }
+
+      @media screen and (min-width: $desktop-BP) {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -12,10 +20,19 @@ section.content-certifications {
     text-align: center;
     margin-bottom: 2rem;
 
+    @media screen and (min-width: $tablet-BP) {
+      width: 90%;
+      margin: 0 auto;
+    }
+
     .block {
       margin: 0 0 1rem;
       /* padding: 1rem; */
       @include neo(1, 1rem, 1rem);
+
+      @media screen and (min-width: $tablet-BP) {
+        margin: 2.7rem;
+      }
 
       &.active {
         .title-acordion {
@@ -37,7 +54,13 @@ section.content-certifications {
           margin: 0 0 1rem;
           padding: 1rem;
           font-size: 1.5rem;
+
           @include neo(1, 1rem, 1rem);
+
+          @media screen and (min-width: $tablet-BP) {
+            font-size: 2rem;
+            padding: 2rem;
+          }
         }
 
         span {
@@ -54,7 +77,15 @@ section.content-certifications {
       }
 
       img {
-        width: 40%;
+        width: 35%;
+
+        @media screen and (min-width: $tablet-BP) {
+          width: 25%;
+        }
+        
+        @media screen and (min-width: $desktop-BP) {
+          width: 15%;
+        }
       }
 
       .content-acordion {
@@ -73,7 +104,15 @@ section.content-certifications {
     .block {
       &.active {
         .content-acordion {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           height: 18rem;
+
+          @media screen and (min-width: $tablet-BP) {
+            height: 20rem;
+          }
         }
       }
     }
