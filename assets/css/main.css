@@ -1013,7 +1013,6 @@ section.content-certifications div.acordion {
         margin: 0 0 1rem;
         padding: 1rem;
         font-size: 1.5rem;
-        color: #7d4039;
         color: var(--negro);
         transition: all .4s ease;
         border-radius: 1rem;
@@ -1038,6 +1037,6 @@ section.content-certifications div.acordion {
         padding: 1rem;
         margin: 0; }
   section.content-certifications div.acordion .block.active .content-acordion {
-    height: auto; }
+    height: 18rem; }
 
 /*# sourceMappingURL=main.css.map */

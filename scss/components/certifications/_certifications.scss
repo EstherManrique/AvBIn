@@ -37,7 +37,6 @@ section.content-certifications {
           margin: 0 0 1rem;
           padding: 1rem;
           font-size: 1.5rem;
-          color: $wine;
           @include neo(1, 1rem, 1rem);
         }
 
@@ -74,7 +73,7 @@ section.content-certifications {
     .block {
       &.active {
         .content-acordion {
-          height: auto;
+          height: 18rem;
         }
       }
     }
