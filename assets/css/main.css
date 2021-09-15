@@ -1069,4 +1069,66 @@ section.content-certifications div.acordion {
       section.content-certifications div.acordion .block.active .content-acordion {
         height: 20rem; } }
 
+@media screen and (min-width: 768px) {
+  section.content-contact .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; } }
+@media screen and (min-width: 1024px) {
+  section.content-contact .container {
+    flex-direction: row;
+    align-items: center; } }
+section.content-contact .container .contact-info .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0; }
+  @media screen and (min-width: 768px) {
+    section.content-contact .container .contact-info .contact {
+      flex-direction: row;
+      padding: 1rem; } }
+  section.content-contact .container .contact-info .contact span {
+    /*           &.icon-phone {
+      background-image: url("../icons/phone.svg");
+    }
+    &.icon-cel-phone {
+      background-image: url("../icons/cel-phone.svg");
+    }
+    &.icon-email {
+      background-image: url("../icons/email.svg");
+    }
+    &.icon-linkedin {
+      background-image: url("../icons/linkedin.svg");
+    } */ }
+    @media screen and (min-width: 768px) {
+      section.content-contact .container .contact-info .contact span {
+        margin-right: 3rem; } }
+    section.content-contact .container .contact-info .contact span svg {
+      width: 3rem;
+      height: auto;
+      padding-bottom: 1rem; }
+      @media screen and (min-width: 768px) {
+        section.content-contact .container .contact-info .contact span svg {
+          width: 4rem; } }
+      @media screen and (min-width: 1024px) {
+        section.content-contact .container .contact-info .contact span svg {
+          width: 5rem; } }
+  section.content-contact .container .contact-info .contact a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #000000; }
+    @media screen and (min-width: 768px) {
+      section.content-contact .container .contact-info .contact a {
+        font-size: 2.5rem; } }
+    @media screen and (min-width: 1024px) {
+      section.content-contact .container .contact-info .contact a {
+        font-size: 3rem; } }
+@media screen and (min-width: 768px) {
+  section.content-contact .text-circle {
+    width: 25rem;
+    height: 25rem;
+    margin: 3rem auto;
+    border: 1px solid red;
+    border-radius: 50%; } }
+
 /*# sourceMappingURL=main.css.map */
