@@ -1,0 +1,86 @@
+section.content-contact {
+  .container {
+    @media screen and (min-width: $tablet-BP) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    @media screen and (min-width: $desktop-BP) {
+        flex-direction: row; 
+        align-items: center;    
+    }
+
+    
+    .contact-info {
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+
+        @media screen and (min-width: $tablet-BP) {
+          flex-direction: row;
+          padding: 1rem;
+        }
+
+        span {
+          @media screen and (min-width: $tablet-BP) {
+            margin-right: 3rem;
+          }
+
+          svg {
+            width: 3rem;
+            height: auto;
+            padding-bottom: 1rem;
+
+            @media screen and (min-width: $tablet-BP) {
+              width: 4rem;
+            }
+
+            @media screen and (min-width: $desktop-BP) {
+              width: 5rem;
+            }
+          }
+
+          /*           &.icon-phone {
+            background-image: url("../icons/phone.svg");
+          }
+          &.icon-cel-phone {
+            background-image: url("../icons/cel-phone.svg");
+          }
+          &.icon-email {
+            background-image: url("../icons/email.svg");
+          }
+          &.icon-linkedin {
+            background-image: url("../icons/linkedin.svg");
+          } */
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 1.8rem;
+          color: $black;
+
+          @media screen and (min-width: $tablet-BP) {
+            font-size: 2.5rem;
+          }
+
+          @media screen and (min-width: $desktop-BP) {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+
+  }
+  @media screen and (min-width: $tablet-BP) {
+    .text-circle {
+      width: 25rem;
+      height: 25rem;
+      margin: 3rem auto;
+      border: 1px solid red;
+      border-radius: 50%; 
+    }
+  }
+}
