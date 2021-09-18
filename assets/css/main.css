@@ -651,12 +651,12 @@ section.services {
         section.services .services-content .container .list-services li a {
           text-decoration: none;
           color: #333333;
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           line-height: 2.5;
           font-weight: bold; }
           @media screen and (min-width: 768px) {
             section.services .services-content .container .list-services li a {
-              font-size: 3rem; } }
+              font-size: 2.5rem; } }
         section.services .services-content .container .list-services li.service-1 {
           background-image: url("../icons/010-edificios.svg"); }
         section.services .services-content .container .list-services li.service-2 {
@@ -1073,7 +1073,8 @@ section.content-certifications div.acordion {
   section.content-contact .container {
     display: flex;
     justify-content: center;
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center; } }
 @media screen and (min-width: 1024px) {
   section.content-contact .container {
     flex-direction: row;
@@ -1102,7 +1103,8 @@ section.content-contact .container .contact-info .contact {
     } */ }
     @media screen and (min-width: 768px) {
       section.content-contact .container .contact-info .contact span {
-        margin-right: 3rem; } }
+        margin-right: 3rem;
+        padding: 2.5rem; } }
     section.content-contact .container .contact-info .contact span svg {
       width: 3rem;
       height: auto;
