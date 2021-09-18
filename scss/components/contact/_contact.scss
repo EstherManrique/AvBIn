@@ -4,6 +4,7 @@ section.content-contact {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      align-items: center;
     }
     
     @media screen and (min-width: $desktop-BP) {
@@ -27,6 +28,7 @@ section.content-contact {
         span {
           @media screen and (min-width: $tablet-BP) {
             margin-right: 3rem;
+            padding: 2.5rem;
           }
 
           svg {
