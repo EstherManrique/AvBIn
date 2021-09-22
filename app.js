@@ -2,7 +2,6 @@
 ((d) => {
   /* ******** Slider ******** */
 
-  // armar peda
   const slider = d.querySelector("#hero-slider");
   if (slider) {
     let sliderSection = d.querySelectorAll(".slider-section");
