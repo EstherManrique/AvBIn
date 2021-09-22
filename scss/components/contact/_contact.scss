@@ -6,13 +6,12 @@ section.content-contact {
       flex-direction: column;
       align-items: center;
     }
-    
+
     @media screen and (min-width: $desktop-BP) {
-        flex-direction: row; 
-        align-items: center;    
+      flex-direction: row;
+      align-items: center;
     }
 
-    
     .contact-info {
       .contact {
         display: flex;
@@ -74,15 +73,52 @@ section.content-contact {
         }
       }
     }
-
   }
-  @media screen and (min-width: $tablet-BP) {
-    .text-circle {
-      width: 25rem;
-      height: 25rem;
+
+  .text-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 15rem;
+      height: 15rem;
       margin: 3rem auto;
-      border: 1px solid red;
-      border-radius: 50%; 
+
+      animation-name: rotation;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+      @keyframes rotation {
+        0% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      /* @media screen and (min-width: $tablet-BP) {
+          display: block;
+          width: 25rem;
+          height: 25rem;
+          margin: 3rem auto;
+          border: none;
+          animation-name: rotation;
+          animation-duration: 20s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+
+          @keyframes rotation {
+            0% {
+              transform:rotate(360deg);
+            }
+            100% {
+              transform:rotate(0deg);
+            }
+          }
+      } */
     }
   }
 }
