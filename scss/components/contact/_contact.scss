@@ -99,6 +99,16 @@ section.content-contact {
         }
       }
 
+      @media screen and (min-width: $tablet-BP) {
+        width: 25rem;
+        height: 25rem;
+      }
+
+      @media screen and (min-width: $desktop-BP) {
+        width: 35rem;
+        height: 35rem;
+      }
+
       /* @media screen and (min-width: $tablet-BP) {
           display: block;
           width: 25rem;

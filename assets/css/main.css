@@ -1165,5 +1165,13 @@ section.content-contact .text-circle {
     transform: rotate(360deg); }
   100% {
     transform: rotate(0deg); } }
+    @media screen and (min-width: 768px) {
+      section.content-contact .text-circle img {
+        width: 25rem;
+        height: 25rem; } }
+    @media screen and (min-width: 1024px) {
+      section.content-contact .text-circle img {
+        width: 35rem;
+        height: 35rem; } }
 
 /*# sourceMappingURL=main.css.map */
