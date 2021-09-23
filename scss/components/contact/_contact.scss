@@ -15,8 +15,8 @@ section.content-contact {
     }
 
     .contact-info {
-      
-      @media screen and (min-width: $tablet-BP) {        
+
+      @media screen and (min-width: $tablet-BP) {
         margin: 3.6rem auto;
       }
 
@@ -72,7 +72,7 @@ section.content-contact {
   }
 
   .text-circle {
-    background: url("/assets/icons/circle-text.svg") no-repeat center;
+    background: url("../icons/circle-text.svg") no-repeat center;
     background-size: cover;
     width: 15rem;
     height: 15rem;
