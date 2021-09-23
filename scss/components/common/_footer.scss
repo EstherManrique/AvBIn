@@ -37,9 +37,28 @@ footer.footer {
     @media screen and (min-width: $desktop-BP) {
       padding-left: 5rem;
     }
+    .footer-links {
+      margin: 0.5rem auto;
+      font-size: 0.8rem;
+
+      @media screen and (min-width: $tablet-BP) {
+        margin: 0.6rem auto;
+        font-size: 1.5rem;
+      }
+      
+      @media screen and (min-width: $desktop-BP) {
+        margin: 0.8rem auto;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+
     h5 {
       font-size: 0.8rem;
-      margin: 0.3rem auto;
+      margin: 0.5rem auto;
 
       @media screen and (min-width: $tablet-BP) {
         font-size: 1.5rem;
