@@ -394,6 +394,38 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes move {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-1rem); } }
+@media screen and (min-width: 1024px) {
+  .hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    padding: 15px 0; }
+    .hvr-underline-from-center:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 51%;
+      right: 51%;
+      bottom: 5px;
+      background: #7d4039;
+      height: 4px;
+      -webkit-transition-property: left, right;
+      transition-property: left, right;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out; }
+    .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+      left: 0;
+      right: 0; } }
 h1 {
   font-size: 2rem; }
   @media screen and (min-width: 768px) {
@@ -1091,33 +1123,20 @@ section.content-contact .container .contact-info .contact {
     section.content-contact .container .contact-info .contact {
       flex-direction: row;
       padding: 1rem; } }
-  section.content-contact .container .contact-info .contact span {
-    /*           &.icon-phone {
-      background-image: url("../icons/phone.svg");
-    }
-    &.icon-cel-phone {
-      background-image: url("../icons/cel-phone.svg");
-    }
-    &.icon-email {
-      background-image: url("../icons/email.svg");
-    }
-    &.icon-linkedin {
-      background-image: url("../icons/linkedin.svg");
-    } */ }
+  @media screen and (min-width: 768px) {
+    section.content-contact .container .contact-info .contact span {
+      margin-right: 3rem;
+      padding: 2.5rem; } }
+  section.content-contact .container .contact-info .contact span svg {
+    width: 3rem;
+    height: auto;
+    padding-bottom: 1rem; }
     @media screen and (min-width: 768px) {
-      section.content-contact .container .contact-info .contact span {
-        margin-right: 3rem;
-        padding: 2.5rem; } }
-    section.content-contact .container .contact-info .contact span svg {
-      width: 3rem;
-      height: auto;
-      padding-bottom: 1rem; }
-      @media screen and (min-width: 768px) {
-        section.content-contact .container .contact-info .contact span svg {
-          width: 4rem; } }
-      @media screen and (min-width: 1024px) {
-        section.content-contact .container .contact-info .contact span svg {
-          width: 5rem; } }
+      section.content-contact .container .contact-info .contact span svg {
+        width: 4rem; } }
+    @media screen and (min-width: 1024px) {
+      section.content-contact .container .contact-info .contact span svg {
+        width: 5rem; } }
   section.content-contact .container .contact-info .contact a {
     text-decoration: none;
     font-size: 1.8rem;
@@ -1139,27 +1158,7 @@ section.content-contact .text-circle {
     animation-name: rotation;
     animation-duration: 20s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
-      /* @media screen and (min-width: $tablet-BP) {
-          display: block;
-          width: 25rem;
-          height: 25rem;
-          margin: 3rem auto;
-          border: none;
-          animation-name: rotation;
-          animation-duration: 20s;
-          animation-iteration-count: infinite;
-          animation-timing-function: linear;
-
-          @keyframes rotation {
-            0% {
-              transform:rotate(360deg);
-            }
-            100% {
-              transform:rotate(0deg);
-            }
-          }
-      } */ }
+    animation-timing-function: linear; }
 @keyframes rotation {
   0% {
     transform: rotate(360deg); }
