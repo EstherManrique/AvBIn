@@ -1,4 +1,8 @@
 div.main-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 2rem 0;
   
   h2 {
@@ -15,7 +19,26 @@ div.main-subtitle {
     }
   }
 
-  hr {
+  .line-title {
+    display: block;
+    width: 10rem;
+    height: 0.4rem;
+
+    background: url("../icons/title-line_1.svg") no-repeat center;
+    background-size: cover;
+
+    @media screen and (min-width: $tablet-BP) {
+      width: 15rem;
+      height: 0.5rem;
+    }
+    
+    @media screen and (min-width: $desktop-BP) {
+      width: 15rem;
+      height: 0.6rem;
+    }
+  }
+
+  /* hr {
     width: 8rem;
     height: 0.25rem;
     background-color: $wine;
@@ -24,5 +47,5 @@ div.main-subtitle {
       width: 12rem;
       height: 0.4rem;
     }
-  }
+  } */
 }

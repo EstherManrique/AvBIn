@@ -567,7 +567,21 @@ header.header {
         margin-top: 7rem; } }
 
 div.main-subtitle {
-  padding: 2rem 0; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  /* hr {
+    width: 8rem;
+    height: 0.25rem;
+    background-color: $wine;
+
+    @media screen and (min-width: $tablet-BP) {
+      width: 12rem;
+      height: 0.4rem;
+    }
+  } */ }
   div.main-subtitle h2 {
     font-size: 2.4rem;
     margin: 0;
@@ -578,14 +592,20 @@ div.main-subtitle {
     @media screen and (min-width: 1024px) {
       div.main-subtitle h2 {
         font-size: 4rem; } }
-  div.main-subtitle hr {
-    width: 8rem;
-    height: 0.25rem;
-    background-color: #7d4039; }
+  div.main-subtitle .line-title {
+    display: block;
+    width: 10rem;
+    height: 0.4rem;
+    background: url("../icons/title-line_1.svg") no-repeat center;
+    background-size: cover; }
     @media screen and (min-width: 768px) {
-      div.main-subtitle hr {
-        width: 12rem;
-        height: 0.4rem; } }
+      div.main-subtitle .line-title {
+        width: 15rem;
+        height: 0.5rem; } }
+    @media screen and (min-width: 1024px) {
+      div.main-subtitle .line-title {
+        width: 15rem;
+        height: 0.6rem; } }
 
 footer.footer {
   background-color: #7d4039;
