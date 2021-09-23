@@ -1153,17 +1153,24 @@ section.content-contact {
   @media screen and (min-width: 768px) {
     section.content-contact .container .contact-info {
       margin: 3.6rem auto; } }
+  @media screen and (min-width: 1024px) {
+    section.content-contact .container .contact-info {
+      margin: 1rem auto 0.2rem; } }
   section.content-contact .container .contact-info .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-    margin-bottom: 0.7rem; }
+    margin-bottom: 0.95rem; }
     @media screen and (min-width: 768px) {
       section.content-contact .container .contact-info .contact {
         flex-direction: row;
         padding: 1rem;
-        margin-bottom: 1rem; } }
+        margin-bottom: 1.25rem; } }
+    @media screen and (min-width: 1024px) {
+      section.content-contact .container .contact-info .contact {
+        padding: 0;
+        margin-bottom: 0; } }
     @media screen and (min-width: 768px) {
       section.content-contact .container .contact-info .contact span {
         margin-right: 3rem;
