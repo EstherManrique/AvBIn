@@ -85,6 +85,10 @@ header.header {
         }
       }
     }
+
+    @media screen and (min-width: $desktop-BP) {
+      display: none;
+    }
   }
 
   /* ******************** */

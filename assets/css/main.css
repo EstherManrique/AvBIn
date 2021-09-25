@@ -532,6 +532,9 @@ header.header {
         transform: rotate(-45deg);
         top: 20px;
         left: 8px; }
+    @media screen and (min-width: 1024px) {
+      header.header .burger-icon {
+        display: none; } }
   header.header .menu {
     position: fixed;
     top: 5.8rem;

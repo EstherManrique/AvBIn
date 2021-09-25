@@ -25,6 +25,31 @@
     }
   }
 
+  const Next = (d, slider) => {
+    let sliderSectionFirst = d.querySelectorAll(".slider-section")[0];
+    slider.style.marginLeft = "-200%";
+    slider.style.transition = "all 0.5s";
+    setTimeout(() => {
+      slider.style.transition = "none";
+      slider.insertAdjacentElement("beforeend", sliderSectionFirst);
+      slider.style.marginLeft = "-100%";
+    }, 500);
+  };
+  
+  const Previus = (d, slider) => {
+    let sliderSection = d.querySelectorAll(".slider-section");
+    let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    slider.style.marginLeft = "0%";
+    slider.style.transition = "all 0.5s";
+  
+    setTimeout(() => {
+      slider.style.transition = "none";
+      slider.insertAdjacentElement("afterbegin", sliderSectionLast);
+      slider.style.marginLeft = "-100%";
+    }, 500);
+  };
+  
+
   /* ******Menu Hamburger******  */
   const $btnMenu = d.querySelector(".nav-burger"),
     $menu = d.querySelector(".menu");
@@ -40,32 +65,6 @@
     $btnMenu.classList.remove("open")
   });
 })(document);
-
-
-
-const Next = (d, slider) => {
-  let sliderSectionFirst = d.querySelectorAll(".slider-section")[0];
-  slider.style.marginLeft = "-200%";
-  slider.style.transition = "all 0.5s";
-  setTimeout(() => {
-    slider.style.transition = "none";
-    slider.insertAdjacentElement("beforeend", sliderSectionFirst);
-    slider.style.marginLeft = "-100%";
-  }, 500);
-};
-
-const Previus = (d, slider) => {
-  let sliderSection = d.querySelectorAll(".slider-section");
-  let sliderSectionLast = sliderSection[sliderSection.length - 1];
-  slider.style.marginLeft = "0%";
-  slider.style.transition = "all 0.5s";
-
-  setTimeout(() => {
-    slider.style.transition = "none";
-    slider.insertAdjacentElement("afterbegin", sliderSectionLast);
-    slider.style.marginLeft = "-100%";
-  }, 500);
-};
 
 
 /* ******** Modals - JSon ******** */
