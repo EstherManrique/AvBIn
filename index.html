@@ -17,18 +17,17 @@
         <img src="assets/images/Logo_Web_Positivo.svg" alt="Logotipo AvBIME">
       </a>
     </div>
-    <button class="menu-btn">
-      <svg width="36" height="24" viewBox="0 0 36 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0H36V4H0V0ZM0 10H36V14H0V10ZM0 20H36V24H0V20Z" fill="#979797" />
-      </svg>
-      <svg class="none" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M28 2.8L25.2 0L14 11.2L2.8 0L0 2.8L11.2 14L0 25.2L2.8 28L14 16.8L25.2 28L28 25.2L16.8 14L28 2.8Z"
-          fill="#979797" />
-      </svg>
-    </button>
+
+    <div class="hide-on-med-and-up burger-icon">
+      <div class="nav-burger" data-alloy-navbar-target="#js-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <nav class="menu">
-      <ul class="menu-nav">
+      <ul class="menu-nav" id="js-menu">
         <li><a href="index.html" class="hvr-underline-from-center">INICIO</a></li>
         <li><a href="we.html" class="hvr-underline-from-center">NOSOTROS</a></li>
         <li><a href="services.html" class="hvr-underline-from-center">SERVICIOS</a></li>

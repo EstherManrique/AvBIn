@@ -33,36 +33,79 @@ header.header {
     }
   }
 
-  .menu-btn {
-    width: auto;
-    height: auto;
-    border: none;
-    background: none;
-
-    @media screen and (min-width: $desktop-BP) {
-      display: none;
-    }
-
-    .none {
-      display: none;
+  .burger-icon {
+    display: flex;
+    align-items: center;
+    .nav-burger {
+      width: 32px;
+      height: 23px;
+      transform: rotate(0deg);
+      transition: 0.5s ease-in-out;
+      & > span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $dark;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: 0.25s ease-in-out;
+        &:nth-child(1) {
+          top: 0;
+          transform-origin: left center;
+        }
+        &:nth-child(2) {
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          transform-origin: left center;
+        }
+        &:nth-child(3) {
+          bottom: 0;
+          transform-origin: left center;
+        }
+      }
+      &.open {
+        & > span {
+          &:nth-child(1) {
+            transform: rotate(45deg);
+            top: -3px;
+            left: 8px;
+          }
+          &:nth-child(2) {
+            width: 0%;
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 20px;
+            left: 8px;
+          }
+        }
+      }
     }
   }
 
+  /* ******************** */
   .menu {
     position: fixed;
-    left: 0;
+    top: 5.8rem;
+    right: -100%;
     width: 100%;
     height: 100%;
     background-color: $gray-soft;
-    opacity: 0;
     pointer-events: none;
-    transition: opacity 0.75s ease;
+    transition: all 0.75s ease;
 
+    @media screen and (min-width: $tablet-BP) {
+      top: 7rem;
+    }
     @media screen and (min-width: $desktop-BP) {
       background-color: $gray-soft-1;
       position: static;
       height: auto;
-      opacity: 1;
+      right: auto;
       pointer-events: auto;
     }
 
@@ -113,20 +156,20 @@ header.header {
           font-size: 2rem;
         }
       }
-/*       a:hover {
-        border-bottom: 1px solid red;
-        transition: all 0.5s ease;
-      } */
+      
+      .active {
+        border-bottom: 2.5px solid $wine;
+
+        @media screen and (min-width: $desktop-BP) {
+          color: $dark;
+          border-bottom: none;
+        }
+      }
     }
   }
 
   .menu.is-active {
-    opacity: 1;
+    right: 0;
     pointer-events: auto;
-    margin-top: 5.8rem;
-
-    @media screen and (min-width: $tablet-BP) {
-      margin-top: 7rem;
-    }
   }
 }
