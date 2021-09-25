@@ -1,4 +1,3 @@
-/* ******** Menú ******** */
 ((d) => {
   /* ******** Slider ******** */
 
@@ -26,23 +25,23 @@
     }
   }
 
-  const $btnMenu = d.querySelector(".menu-btn"),
+  /* ******Menu Hamburger******  */
+  const $btnMenu = d.querySelector(".nav-burger"),
     $menu = d.querySelector(".menu");
 
   $btnMenu.addEventListener("click", (e) => {
-    $btnMenu.firstElementChild.classList.toggle("none");
-    $btnMenu.lastElementChild.classList.toggle("none");
+    $btnMenu.classList.toggle("open");
     $menu.classList.toggle("is-active");
   });
 
   d.addEventListener("click", (e) => {
     if (!e.target.matches(".menu a")) return false;
-
-    $btnMenu.firstElementChild.classList.remove("none");
-    $btnMenu.lastElementChild.classList.add("none");
     $menu.classList.remove("is-active");
+    $btnMenu.classList.remove("open")
   });
 })(document);
+
+
 
 const Next = (d, slider) => {
   let sliderSectionFirst = d.querySelectorAll(".slider-section")[0];
@@ -67,6 +66,7 @@ const Previus = (d, slider) => {
     slider.style.marginLeft = "-100%";
   }, 500);
 };
+
 
 /* ******** Modals - JSon ******** */
 
