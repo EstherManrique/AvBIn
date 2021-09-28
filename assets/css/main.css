@@ -984,10 +984,10 @@ section.cards-services .container .cards-wrapper {
           section.cards-services .container .cards-wrapper .card-services .card-info .card-button button:hover {
             transform: scale(1.05);
             transition: all 0.3s ease-in-out;
-            color: #7d4039;
             font-weight: bold; } }
         section.cards-services .container .cards-wrapper .card-services .card-info .card-button button a {
-          text-decoration: none; }
+          text-decoration: none;
+          color: #7d4039; }
 
 .cards-modals {
   position: relative;
